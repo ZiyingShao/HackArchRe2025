@@ -38,9 +38,6 @@ from abc import ABC, abstractmethod
 from typing import List, Dict
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize, sent_tokenize
-import nltk
-nltk.download('punkt')
-nltk.download('stopwords')
 
 class BaseAnalyzer(ABC):
     def __init__(self, file_names: List[str]):
@@ -92,7 +89,8 @@ class NewsAnalyzer(BaseAnalyzer):
 
         self.context = context  # Context to guide the AI
         self.file_names = file_names
-        self.llm = LLM_API()  # Access the shared LLM API instance
+        self.llm = LLM_API()
+        self.matched_articles = []  # Access the shared LLM API instance
 
 
     def extract_keywords(self, text: str) -> List[str]:
@@ -110,7 +108,7 @@ class NewsAnalyzer(BaseAnalyzer):
             return []
 
     
-    def search_articles(self, keywords: List[str]) -> List[Dict]:
+    def search_articles(self, keywords: List[str], auto_extract= False) -> List[Dict]:
         """
         Search through the articles for the given keywords.
         Returns a list of dictionaries containing the article title, content, and matched keywords.
@@ -119,13 +117,19 @@ class NewsAnalyzer(BaseAnalyzer):
         for file_name in self.file_names:
             content = self.read_file_content(file_name)
 
+            if auto_extract:
+                extracted_keywords = self.extract_keywords(content)
+                matched = extracted_keywords
+
             # Find which keywords actually match
-            matched = [kw for kw in keywords if kw.lower() in content.lower()]
+            else:
+                matched = [kw for kw in keywords if kw.lower() in content.lower()]
 
             if matched:
                 title = os.path.basename(file_name).replace('_', ' ').replace('.md', '').title()
 
                 matching_articles.append({
+					"File Name": file_name,
                     "Title": title,
                     "Content": content,
                     "Matched Keywords": matched  # Add matched keywords here!
@@ -159,7 +163,7 @@ class NewsAnalyzer(BaseAnalyzer):
             "High": 2,
             "Unknown": -1
         }
-        for article in articles:
+        for article in self.matched_articles:
             prompt = f"""
             You are an expert underwritting analyst.
     
@@ -169,6 +173,8 @@ class NewsAnalyzer(BaseAnalyzer):
             2. Extract 3-5 important points or key facts from the article.
 			2. Identify any potential risks mentioned or implied in the article.
 	        3. Assign an overall Risk Level to the article based on the potential impact (choose one: High, Medium, Low).
+			4. Assign an overall Risk Level (High, Medium, Low).
+			5. Based on the risk level and risks, provide a short Recommendation for Underwriters (e.g., "Proceed with caution", "Increase premium", "Exclude certain coverages", etc.)
     
             Format your response strictly in this JSON format:
     
@@ -176,7 +182,8 @@ class NewsAnalyzer(BaseAnalyzer):
              "Summary": "<summary>",
              "Important Points": ["point 1", "point 2", "point 3"],
 			 "Potential Risks": ["risk 1", "risk 2", "risk 3"],
-             "Risk Level": "High/Medium/Low"
+             "Risk Level": "High/Medium/Low",
+			 "Recommendation for Underwriters": "<recommendation>"
             }}
     
             Here is the article:
@@ -203,6 +210,7 @@ class NewsAnalyzer(BaseAnalyzer):
                 risk_level_numeric = risk_level_mapping[risk_level]
                 article_summary["Risk Level"] = risk_level
                 article_summary["Risk Level Numeric"] = risk_level_numeric
+                article_summary["Recommendation"] = parsed.get("Recommendation for Underwriters", "").strip()
 
                 article_summary["Keywords"] = article.get("Matched Keywords", [])
     
@@ -216,6 +224,7 @@ class NewsAnalyzer(BaseAnalyzer):
                 article_summary["Important Points"] = []
                 article_summary["Potential Risks"] = []
                 article_summary["Risk Level"] = "Unknown"
+                article_summary["Recommendation for Underwriters"] = "No recommendation due to JSON error."
 
                 
                 #print(f"Failed to decode JSON for article: {article['Title']}")
@@ -237,19 +246,25 @@ if __name__ == "__main__":
     directory_path =  "./data/news/"
     file_names = BaseAnalyzer.get_all_file_names(directory_path)
     print("what are the file_names?", file_names)
-    test_file = file_names[0:5]
+    test_file = file_names[0:10]
     print("test file name is:", test_file)
     # Read the content of all files in the directory and combine them into the context
+    analyzer = NewsAnalyzer(file_names=test_file, context="")
 
+    use_predefined_keywords = True
+    given_keywords = ['catastrophe', 'catastrophic', 'florida', 'location', 'turkey', 'inflation', 'earthquake', 'hurricane', 'flood', 'storm','insurance', 'reinsurance', 'property', 'real estate', 'market', 'investment', 'risk', 'loss', 'damage', 'claim']
+    
+    if use_predefined_keywords:
+        articles = analyzer.search_articles(given_keywords, auto_extract=False)
+    else:
+        articles = analyzer.search_articles([], auto_extract=True) 
+    print(f"Found {len(articles)} matching articles.")
+    analyzer.matched_articles = articles
+    analyzer.file_names = [a["File Name"] for a in articles]
+    analyzer.context = ""
+    analyzer.articles = articles
 
-    context = ""
-    analyzer = NewsAnalyzer(file_names=test_file, context=context)
-    for file_name in test_file:
-        context += analyzer.read_file_content(file_name) + "\n"
-    print("context is:", context)
-    analyzer.context = context
     result = analyzer.analyze()
-
 	# Save the result to a JSON file
     output_file_path = "/Users/ziyingshao/Desktop/HackArchRe2025-main/analysis_result.json"
     with open(output_file_path, "w") as json_file:
