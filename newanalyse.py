@@ -1,7 +1,8 @@
 from openai import OpenAI
 import sys
 import os
-
+import json 
+from collections import OrderedDict
 class LLM_API:
     _instance = None
 
@@ -14,8 +15,8 @@ class LLM_API:
     def initialize(self):
         self.api_key = "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"
         import openai
-        openai.api_key = self.api_key
         self.client = openai
+        self.client.api_key = self.api_key
 
     def ask(self, prompt: str) -> str:
         try:
@@ -49,7 +50,8 @@ class BaseAnalyzer(ABC):
         """
         #self.file_names = file_n
         self.llm = LLM_API()
-    def read_file_content(file_path: str) -> str:
+
+    def read_file_content(self, file_path: str) -> str:
         """
         Read the content of a file.
         """
@@ -78,7 +80,7 @@ class BaseAnalyzer(ABC):
         Each analyzer must implement this method.
         Returns a structured JSON/dictionary output.
         """
-        
+
 
 
 
@@ -89,24 +91,51 @@ class NewsAnalyzer(BaseAnalyzer):
         super().__init__(file_names)
 
         self.context = context  # Context to guide the AI
-        self.stop_words = set(stopwords.words('english'))
-        
-	
+        self.file_names = file_names
+        self.llm = LLM_API()  # Access the shared LLM API instance
+
+
     def extract_keywords(self, text: str) -> List[str]:
         """
         Extract the most important keywords related to real estate using OpenAI API.
         """
-        prompt = f"Extract the top 5 keywords related to real estate from the following text:\n\n{text}\n\nKeywords:"
+        prompt = f"Extract the top 10 keywords related to real estate from the following text:\n\n{text}\n\nKeywords:"
         try:
             response = self.llm.ask(prompt)
-            keywords = response.split(",")  # Assuming the response is a comma-separated list of keywords
-            return [keyword.strip() for keyword in keywords]
+            # Split the response by newlines and remove numbering
+            keywords = [line.split('. ', 1)[-1].strip() for line in response.split('\n') if line.strip()]
+            return keywords
         except Exception as e:
             print(f"Error extracting keywords: {e}")
             return []
-	
 
-		
+    
+    def search_articles(self, keywords: List[str]) -> List[Dict]:
+        """
+        Search through the articles for the given keywords.
+        Returns a list of dictionaries containing the article title, content, and matched keywords.
+        """
+        matching_articles = []
+        for file_name in self.file_names:
+            content = self.read_file_content(file_name)
+
+            # Find which keywords actually match
+            matched = [kw for kw in keywords if kw.lower() in content.lower()]
+
+            if matched:
+                title = os.path.basename(file_name).replace('_', ' ').replace('.md', '').title()
+
+                matching_articles.append({
+                    "Title": title,
+                    "Content": content,
+                    "Matched Keywords": matched  # Add matched keywords here!
+                })
+        return matching_articles
+
+
+
+
+
     def analyze(self) -> Dict:
         """
         Analyze the news articles to extract key information.
@@ -114,15 +143,68 @@ class NewsAnalyzer(BaseAnalyzer):
         """
         # Step 1: Preprocess the context to extract keywords
         keywords = self.extract_keywords(self.context)
-        
+        print("Extracted Keywords:", keywords)
+
+
         # Step 2: Search through the news articles using the keywords
+        articles = self.search_articles(keywords)
+        print("Found Articles:", articles)
         #articles = self.search_articles(keywords)
-        
+
         # Step 3: Rate and summarize the articles
-        #summaries = self.rate_and_summarize(articles)
-        print(keywords)
-        return keywords
-		
+        summaries = []
+        for article in articles:
+            prompt = f"""
+            You are an expert summarizer.
+    
+            Given the following news article, do the following:
+            
+            1. Summarize the article in 3-5 sentences.
+            2. Extract 3-5 important points or key facts from the article.
+    
+            Format your response strictly in this JSON format:
+    
+            {{
+             "Summary": "<summary>",
+             "Important Points": ["point 1", "point 2", "point 3"]
+            }}
+    
+            Here is the article:
+            \"\"\"
+            {article['Content']}
+            \"\"\"
+            """
+    
+            response = self.llm.ask(prompt)
+    
+            try:
+                # Try to parse response as JSON
+                parsed = json.loads(response)
+    
+                # Build a clean ordered dict
+                article_summary = OrderedDict()
+                article_summary["Title"] = article["Title"]
+                article_summary["Summary"] = parsed.get("Summary", "").strip()
+                article_summary["Important Points"] = parsed.get("Important Points", [])
+                article_summary["Matched Keywords"] = article.get("Matched Keywords", [])
+    
+            except json.JSONDecodeError:
+                # If it's not valid JSON, keep the text as-is and leave points empty
+                print(f"Failed to decode JSON for article: {article['Title']}")
+                article_summary = OrderedDict()
+                article_summary["Title"] = article["Title"]
+                article_summary["Summary"] = response.strip()
+                article_summary["Important Points"] = []
+                article_summary["Matched Keywords"] = article.get("Matched Keywords", [])
+                #article_summary["Matched Keywords"] = article.get("Matched Keywords", [])
+                #print(f"Failed to decode JSON for article: {article['Title']}")
+                #print(f"Response: {response}")
+            summaries.append(article_summary)
+
+        print("the summary is:", summaries)
+        return summaries
+
+
         # use the llm singleton to figure out the 5 most important key words to search for. they shouldnt be too general.
 
         # use an algorithm to search throuigh "server/data/news" md files with those keywords
@@ -134,15 +216,22 @@ if __name__ == "__main__":
     directory_path =  "./data/news/"
     file_names = BaseAnalyzer.get_all_file_names(directory_path)
     print("what are the file_names?", file_names)
-    test_file = file_names[0:1]
+    test_file = file_names[0:5]
     print("test file name is:", test_file)
     # Read the content of all files in the directory and combine them into the context
+
+
     context = ""
-    for file_name in test_file:
-        context += BaseAnalyzer.read_file_content(file_name) + "\n"
-    print("context is:", context)
     analyzer = NewsAnalyzer(file_names=test_file, context=context)
+    for file_name in test_file:
+        context += analyzer.read_file_content(file_name) + "\n"
+    print("context is:", context)
+    analyzer.context = context
     result = analyzer.analyze()
-    
+
+	# Save the result to a JSON file
+    output_file_path = "/Users/ziyingshao/Desktop/HackArchRe2025-main/analysis_result.json"
+    with open(output_file_path, "w") as json_file:
+        json.dump(result, json_file, indent=4)
     #print("Analysis Result:")
     #print(result)
