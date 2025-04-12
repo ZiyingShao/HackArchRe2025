@@ -12,15 +12,16 @@ class LLM_API:
         return cls._instance
 
     def initialize(self):
-        self.client = OpenAI(
-            api_key="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"
-        )
+        self.api_key = "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"
+        import openai
+        openai.api_key = self.api_key
+        self.client = openai
 
     def ask(self, prompt: str) -> str:
         try:
             response = self.client.chat.completions.create(
                 model="gpt-3.5-turbo",
-                response_format={ "type":"json_object" },
+                #response_format={ "type":"json_object" },
                 messages=[
                     {"role": "user", "content": prompt}
                 ],
@@ -86,6 +87,7 @@ from typing import Dict, List
 class NewsAnalyzer(BaseAnalyzer):
     def __init__(self, file_names: List[str], context: str):
         super().__init__(file_names)
+
         self.context = context  # Context to guide the AI
         self.stop_words = set(stopwords.words('english'))
         
@@ -118,7 +120,7 @@ class NewsAnalyzer(BaseAnalyzer):
         
         # Step 3: Rate and summarize the articles
         #summaries = self.rate_and_summarize(articles)
-        
+        print(keywords)
         return keywords
 		
         # use the llm singleton to figure out the 5 most important key words to search for. they shouldnt be too general.
@@ -142,5 +144,5 @@ if __name__ == "__main__":
     analyzer = NewsAnalyzer(file_names=test_file, context=context)
     result = analyzer.analyze()
     
-    print("Analysis Result:")
-    print(result)
+    #print("Analysis Result:")
+    #print(result)
