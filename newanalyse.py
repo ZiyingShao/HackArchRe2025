@@ -171,11 +171,19 @@ class NewsAnalyzer(BaseAnalyzer):
             
             1. Summarize the article in 3-5 sentences.
             2. Extract 3-5 important points or key facts from the article.
-			2. Identify any potential risks mentioned or implied in the article.
-	        3. Assign an overall Risk Level to the article based on the potential impact (choose one: High, Medium, Low).
-			4. Assign an overall Risk Level (High, Medium, Low).
-			5. Based on the risk level and risks, provide a short Recommendation for Underwriters (e.g., "Proceed with caution", "Increase premium", "Exclude certain coverages", etc.)
-    
+			3. Identify any potential risks clearly based on the article facts or implied in the article.
+			
+	        4. Assign an overall Risk Level to the article based on the potential impact or based on the severity of the Potential Risks (choose one: High, Medium, Low).
+			
+			6. Based on the risk level and risks, provide a short Recommendation for Underwriters (e.g. "Increase premium", "Exclude certain coverages", etc.)
+			7. Provide a SHORT, PRACTICAL recommendation for underwriters based on the identified risk.
+
+			IMPORTANT:
+            - Your recommendation must be logically based on the extracted Important Points and Potential Risks.
+            - DO NOT invent new risks not mentioned.
+            - Justify your recommendation briefly based on the risks identified.
+
+            Be professional, concise, and focused on insurance actions.
             Format your response strictly in this JSON format:
     
             {{
