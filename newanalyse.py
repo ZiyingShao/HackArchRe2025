@@ -153,20 +153,30 @@ class NewsAnalyzer(BaseAnalyzer):
 
         # Step 3: Rate and summarize the articles
         summaries = []
+        risk_level_mapping = {
+            "Low": 0,
+            "Medium": 1,
+            "High": 2,
+            "Unknown": -1
+        }
         for article in articles:
             prompt = f"""
-            You are an expert summarizer.
+            You are an expert underwritting analyst.
     
             Given the following news article, do the following:
             
             1. Summarize the article in 3-5 sentences.
             2. Extract 3-5 important points or key facts from the article.
+			2. Identify any potential risks mentioned or implied in the article.
+	        3. Assign an overall Risk Level to the article based on the potential impact (choose one: High, Medium, Low).
     
             Format your response strictly in this JSON format:
     
             {{
              "Summary": "<summary>",
-             "Important Points": ["point 1", "point 2", "point 3"]
+             "Important Points": ["point 1", "point 2", "point 3"],
+			 "Potential Risks": ["risk 1", "risk 2", "risk 3"],
+             "Risk Level": "High/Medium/Low"
             }}
     
             Here is the article:
@@ -186,7 +196,15 @@ class NewsAnalyzer(BaseAnalyzer):
                 article_summary["Title"] = article["Title"]
                 article_summary["Summary"] = parsed.get("Summary", "").strip()
                 article_summary["Important Points"] = parsed.get("Important Points", [])
-                article_summary["Matched Keywords"] = article.get("Matched Keywords", [])
+                article_summary["Potential Risks"] = parsed.get("Potential Risks", [])
+                risk_level = parsed.get("Risk Level", "").strip()
+                if risk_level not in ["High", "Medium", "Low"]:
+                    risk_level = "Unknown"
+                risk_level_numeric = risk_level_mapping[risk_level]
+                article_summary["Risk Level"] = risk_level
+                article_summary["Risk Level Numeric"] = risk_level_numeric
+
+                article_summary["Keywords"] = article.get("Matched Keywords", [])
     
             except json.JSONDecodeError:
                 # If it's not valid JSON, keep the text as-is and leave points empty
@@ -194,9 +212,12 @@ class NewsAnalyzer(BaseAnalyzer):
                 article_summary = OrderedDict()
                 article_summary["Title"] = article["Title"]
                 article_summary["Summary"] = response.strip()
+                article_summary["Keywords"] = article.get("Matched Keywords", [])
                 article_summary["Important Points"] = []
-                article_summary["Matched Keywords"] = article.get("Matched Keywords", [])
-                #article_summary["Matched Keywords"] = article.get("Matched Keywords", [])
+                article_summary["Potential Risks"] = []
+                article_summary["Risk Level"] = "Unknown"
+
+                
                 #print(f"Failed to decode JSON for article: {article['Title']}")
                 #print(f"Response: {response}")
             summaries.append(article_summary)
