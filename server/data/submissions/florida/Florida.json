@@ -1,0 +1,1745 @@
+{
+  "terms": {
+    "tax": null,
+    "layers": [
+      {
+        "name": "First Excess",
+        "flatPremium": null,
+        "layerNumber": "L1",
+        "aggregateLimit": 30000000,
+        "depositPremium": 15937500,
+        "minimumPremium": 14343750,
+        "occurrenceLimit": 15000000,
+        "aggregateAttachment": 25000000,
+        "occurrenceAttachment": 25000000
+      },
+      {
+        "name": "Second Excess",
+        "flatPremium": null,
+        "layerNumber": "L2",
+        "aggregateLimit": 160000000,
+        "depositPremium": 61200000,
+        "minimumPremium": 55080000,
+        "occurrenceLimit": 80000000,
+        "aggregateAttachment": 40000000,
+        "occurrenceAttachment": 40000000
+      },
+      {
+        "name": "Third Excess",
+        "flatPremium": null,
+        "layerNumber": "L3",
+        "aggregateLimit": 290000000,
+        "depositPremium": 69020000,
+        "minimumPremium": 62118000,
+        "occurrenceLimit": 145000000,
+        "aggregateAttachment": 120000000,
+        "occurrenceAttachment": 120000000
+      },
+      {
+        "name": "Fourth Excess",
+        "flatPremium": null,
+        "layerNumber": "L4",
+        "aggregateLimit": 240000000,
+        "depositPremium": 38760000,
+        "minimumPremium": 34884000,
+        "occurrenceLimit": 120000000,
+        "aggregateAttachment": 265000000,
+        "occurrenceAttachment": 265000000
+      },
+      {
+        "name": "Fifth Excess",
+        "flatPremium": null,
+        "layerNumber": "L5",
+        "aggregateLimit": 370000000,
+        "depositPremium": 40885000,
+        "minimumPremium": 36796500,
+        "occurrenceLimit": 185000000,
+        "aggregateAttachment": 385000000,
+        "occurrenceAttachment": 385000000
+      },
+      {
+        "name": "Sixth Excess",
+        "flatPremium": null,
+        "layerNumber": "L6",
+        "aggregateLimit": 300000000,
+        "depositPremium": 29325000,
+        "minimumPremium": 26392500,
+        "occurrenceLimit": 300000000,
+        "aggregateAttachment": 570000000,
+        "occurrenceAttachment": 570000000
+      }
+    ],
+    "perils": [
+      "hurricane",
+      "earthquake",
+      "windstorm",
+      "flood",
+      "fire"
+    ],
+    "regions": [
+      {
+        "state": null,
+        "country": "US"
+      }
+    ],
+    "brokerage": null,
+    "brokerName": "Broker ABC",
+    "cedantName": "Cedant XYZ",
+    "contractType": "Occurrence",
+    "currencyCode": "USD",
+    "inceptionDate": "2024-06-01",
+    "expirationDate": "2025-05-31",
+    "uniqueMarketReference": "24\\X",
+    "expiringUniqueMarketReference": null
+  },
+  "yoyAnalysis": {
+    "error": null,
+    "result": {
+      "2023_contract.md <-> 2024_contract.md": [
+        {
+          "oldValue": null,
+          "newValue": "June 1, 2024",
+          "description": "Change in effective date",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "Cedant XYZ",
+          "newValue": "Company XYZ",
+          "description": "Change in the name of the cedant",
+          "importance": 0.7
+        },
+        {
+          "oldValue": null,
+          "newValue": "Company DEF",
+          "description": "Addition of a new company",
+          "importance": 0.6
+        },
+        {
+          "oldValue": null,
+          "newValue": "Broker ABC",
+          "description": "Introduction of a new broker",
+          "importance": 0.5
+        },
+        {
+          "oldValue": "Company XYZ",
+          "newValue": "Company DEF",
+          "description": "Company name change",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "for the FHCF prior to any reduction in retention due to multiple Loss Occurrences in",
+          "newValue": "the same annual period shall be included in calculating the deduction from Ultimate",
+          "description": "Change in calculation method for FHCF deduction",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "Net Loss.",
+          "newValue": "4. If the Company's aggregate limit of FHCF reimbursement coverage is exhausted by",
+          "description": "Change in limit exhaustion conditions",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "losses from multiple Loss Occurrences, and the FHCF does not designate the portion",
+          "newValue": "shall be allocated to each individual Loss Occurrence in the proportion that the",
+          "description": "Change in allocation method for FHCF reimbursement",
+          "importance": 0.9
+        },
+        {
+          "oldValue": "Company's losses in that Loss Occurrence bear to the Company's total losses arising",
+          "newValue": "out of all Loss Occurrences that have exhausted the FHCF coverage.",
+          "description": "Change in proportion calculation for FHCF reimbursement",
+          "importance": 0.85
+        },
+        {
+          "oldValue": "under any excess layer of reinsurance coverage provided by this Contract shall not exceed",
+          "newValue": "either of the following:",
+          "description": "Change in limit conditions for reinsurance coverage",
+          "importance": 0.75
+        },
+        {
+          "oldValue": "2024, both days inclusive, local standard time at the place where the loss occurs, applying",
+          "newValue": "2025, both days inclusive, local standard time at the place where the loss occurs, applying",
+          "description": "Change in effective date of the contract",
+          "importance": 0.8
+        },
+        {
+          "oldValue": null,
+          "newValue": "2. A State Insurance Department or other legal authority has ordered the Subscribing",
+          "description": "Regulatory intervention triggers reassessment",
+          "importance": 0.8
+        },
+        {
+          "oldValue": null,
+          "newValue": "Reinsurer to cease writing business, or the Subscribing Reinsurer is placed under",
+          "description": "Regulatory intervention triggers reassessment",
+          "importance": 0.8
+        },
+        {
+          "oldValue": null,
+          "newValue": "3. The Subscribing Reinsurer has become insolvent or has been placed into liquidation",
+          "description": "Financial distress of reinsurer triggers reassessment",
+          "importance": 0.9
+        },
+        {
+          "oldValue": null,
+          "newValue": "or receivership (whether voluntary or involuntary), or there have been instituted",
+          "description": "Financial distress of reinsurer triggers reassessment",
+          "importance": 0.9
+        },
+        {
+          "oldValue": null,
+          "newValue": "against it proceedings for the appointment of a receiver, liquidator, rehabilitator,",
+          "description": "Financial distress of reinsurer triggers reassessment",
+          "importance": 0.9
+        },
+        {
+          "oldValue": null,
+          "newValue": "conservator, trustee in bankruptcy, or other agent known by whatever name, to take",
+          "description": "Financial distress of reinsurer triggers reassessment",
+          "importance": 0.9
+        },
+        {
+          "oldValue": null,
+          "newValue": "company's policyholders' surplus (or the equivalent under the Subscribing Reinsurer's",
+          "description": "Financial distress of reinsurer triggers reassessment",
+          "importance": 0.9
+        },
+        {
+          "oldValue": null,
+          "newValue": "or the Subscribing Reinsurer's group or holding company's accounting system) as",
+          "description": "Financial distress of reinsurer triggers reassessment",
+          "importance": 0.9
+        },
+        {
+          "oldValue": null,
+          "newValue": "reported in such financial statements of the Subscribing Reinsurer or the Subscribing",
+          "description": "Financial distress of reinsurer triggers reassessment",
+          "importance": 0.9
+        },
+        {
+          "oldValue": null,
+          "newValue": "Reinsurer's group or holding company as designated by the Company, has been",
+          "description": "Reduction of company surplus triggers reassessment",
+          "importance": 0.7
+        },
+        {
+          "oldValue": null,
+          "newValue": "reduced by 20.0% or more of the amount thereof at any date during the prior",
+          "description": "Reduction of company surplus triggers reassessment",
+          "importance": 0.7
+        },
+        {
+          "oldValue": null,
+          "newValue": "12-month period (including the period prior to the inception of this Contract); or",
+          "description": "Reduction of company surplus triggers reassessment",
+          "importance": 0.7
+        },
+        {
+          "oldValue": null,
+          "newValue": "5. The Subscribing Reinsurer has become, or has announced its intention to become,",
+          "description": "Intention to change status triggers reassessment",
+          "importance": 0.6
+        },
+        {
+          "oldValue": "Reinsurer shall remain liable for losses occurring prior to the date of termination; however,",
+          "newValue": "the Subscribing Reinsurer shall have no liability for losses occurring subsequent to the",
+          "description": "Change in liability for losses upon termination of the contract",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "termination of this Contract. The reinsurance premium due the Subscribing Reinsurer",
+          "newValue": "hereunder shall be pro rated based on the period of the Subscribing Reinsurer's",
+          "description": "Change in determination of reinsurance premium upon termination",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "hereunder shall be pro rated based on the period of the Subscribing Reinsurer's",
+          "newValue": "participation hereon. The Subscribing Reinsurer shall immediately return any excess",
+          "description": "Change in pro-rated calculation of reinsurance premium and excess return",
+          "importance": 0.6
+        },
+        {
+          "oldValue": "reinsurance premium received, and the minimum premium requirements set forth in the",
+          "newValue": "D. Additionally, in the event of any of the circumstances listed in paragraph A of this Article,",
+          "description": "Change in minimum premium requirements triggering commutation option",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "D. Additionally, in the event of any of the circumstances listed in paragraph A of this Article,",
+          "newValue": "the Company shall have the option to commute the Subscribing Reinsurer's liability for",
+          "description": "Change in insurer's option to commute reinsurer's liability triggering circumstances",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "the Company shall have the option to commute the Subscribing Reinsurer's liability for",
+          "newValue": "losses on Policies covered by this Contract. In the event the Company and the Subscribing",
+          "description": "Change in scope of commutation option and related procedures",
+          "importance": 0.7
+        },
+        {
+          "oldValue": null,
+          "newValue": null,
+          "description": "Policies with high deductibles",
+          "importance": 0
+        },
+        {
+          "oldValue": null,
+          "newValue": null,
+          "description": "Exclusion reversal for earthquakes and windstorms deductibles",
+          "importance": 0
+        },
+        {
+          "oldValue": null,
+          "newValue": null,
+          "description": "New exclusions for bridges, dams, tunnels, and fine arts collections",
+          "importance": 0
+        },
+        {
+          "oldValue": null,
+          "newValue": null,
+          "description": "Addition of casualty, fidelity, and boiler insurance coverages",
+          "importance": 0
+        },
+        {
+          "oldValue": null,
+          "newValue": null,
+          "description": "Inclusion of commercial inland marine risks and kinds of insurances",
+          "importance": 0
+        },
+        {
+          "oldValue": null,
+          "newValue": null,
+          "description": "Addition of specific commercial inland marine coverages",
+          "importance": 0
+        },
+        {
+          "oldValue": null,
+          "newValue": null,
+          "description": "Inclusion of livestock mortality policies",
+          "importance": 0
+        },
+        {
+          "oldValue": null,
+          "newValue": null,
+          "description": "Addition of cargo coverage for lake and inland water vessels",
+          "importance": 0
+        },
+        {
+          "oldValue": null,
+          "newValue": null,
+          "description": "Insertion of commercial negative film insurance",
+          "importance": 0
+        },
+        {
+          "oldValue": null,
+          "newValue": null,
+          "description": "Page breaks and satellite coverage",
+          "importance": 0
+        },
+        {
+          "oldValue": null,
+          "newValue": null,
+          "description": "Extension of coverage to gas and oil drilling risks",
+          "importance": 0
+        },
+        {
+          "oldValue": null,
+          "newValue": null,
+          "description": "Specific inclusion of flood coverage",
+          "importance": 0
+        },
+        {
+          "oldValue": null,
+          "newValue": null,
+          "description": "Clarification on exclusion of losses due to war and invasion",
+          "importance": 0
+        },
+        {
+          "oldValue": null,
+          "newValue": null,
+          "description": "Coverage for nuclear incidents and act of foreign enemies",
+          "importance": 0
+        },
+        {
+          "oldValue": null,
+          "newValue": null,
+          "description": "Exclusion for overhead transmission lines",
+          "importance": 0
+        },
+        {
+          "oldValue": null,
+          "newValue": null,
+          "description": "Exclusion reversal for seepage and pollution coverage",
+          "importance": 0
+        },
+        {
+          "oldValue": null,
+          "newValue": null,
+          "description": "Limited exclusions for certain types of theft",
+          "importance": 0
+        },
+        {
+          "oldValue": "d. Amusement parks, dance halls or race tracks;",
+          "newValue": "Cash payrolls or manufacturing concerns unless adequately protected by",
+          "description": "Change in the type of business covered",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "Cash payrolls or manufacturing concerns unless adequately protected by",
+          "newValue": "e.",
+          "description": "Change in the type of business covered",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "armored cars.",
+          "newValue": "19. Mold, other than as a result of a peril otherwise covered under the Policy involved.",
+          "description": "Change in coverage due to mold exclusions",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "19. Mold, other than as a result of a peril otherwise covered under the Policy involved.",
+          "newValue": "20. Loss, damage, cost or expense directly or indirectly caused by, contributed to by,",
+          "description": "Inclusion of loss caused by terrorism",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "20. Loss, damage, cost or expense directly or indirectly caused by, contributed to by,",
+          "newValue": "resulting from, or arising out of or in connection with any act of terrorism, as defined",
+          "description": "Terminology change related to terrorism",
+          "importance": 0.6
+        },
+        {
+          "oldValue": "resulting from, or arising out of or in connection with any act of terrorism, as defined",
+          "newValue": "herein, regardless of any cause or event contributing concurrently or in any other",
+          "description": "Clarification of terrorism coverage",
+          "importance": 0.6
+        },
+        {
+          "oldValue": "herein, regardless of any cause or event contributing concurrently or in any other",
+          "newValue": "sequence to the loss.",
+          "description": "Adjustment in language for specificity",
+          "importance": 0.5
+        },
+        {
+          "oldValue": "sequence to the loss.",
+          "newValue": "Broker ABC",
+          "description": "Replacement of text with a specific identifier",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "- 23\rm",
+          "newValue": "+ 24\rm",
+          "description": "Page number reference change",
+          "importance": 0.4
+        },
+        {
+          "oldValue": "Page 6",
+          "newValue": "**--- PAGE BREAK ---**",
+          "description": "Change in page layout",
+          "importance": 0.4
+        },
+        {
+          "oldValue": "during and/or following Strike, Riot or Civil Commotion, including but not limited",
+          "newValue": "to vandalism, looting, theft of or the taking of goods by force.",
+          "description": "Change in the definition of Malicious Act",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "Article 7 - Premium",
+          "newValue": "A. The Company shall pay the Reinsurer a deposit premium for each excess layer of the",
+          "description": "Change in premium payment terms",
+          "importance": 0.9
+        },
+        {
+          "oldValue": null,
+          "newValue": "Page 8",
+          "description": "Change in page number",
+          "importance": 0.5
+        },
+        {
+          "oldValue": null,
+          "newValue": "Page 9",
+          "description": "Change in page number",
+          "importance": 0.5
+        },
+        {
+          "oldValue": null,
+          "newValue": "actions connected thereto, including but not limited to declaratory judgment actions",
+          "description": "Change in legal expenses coverage",
+          "importance": 0.8
+        },
+        {
+          "oldValue": null,
+          "newValue": "Post-judgment interest",
+          "description": "Change in coverage for post-judgment interest",
+          "importance": 0.7
+        },
+        {
+          "oldValue": null,
+          "newValue": "Pre-judgment interest, unless included as part of an award or judgment",
+          "description": "Change in coverage for pre-judgment interest",
+          "importance": 0.75
+        },
+        {
+          "oldValue": null,
+          "newValue": "A pro rata share of salaries and expenses of Company field employees, calculated in",
+          "description": "Change in coverage for employee expenses",
+          "importance": 0.8
+        },
+        {
+          "oldValue": null,
+          "newValue": "Loss Adjustment Expense does not include salaries and expenses of the Company's",
+          "description": "Change in Loss Adjustment Expense definition",
+          "importance": 0.6
+        },
+        {
+          "oldValue": null,
+          "newValue": "Loss Occurrence means the sum of all individual losses directly and indirectly occasioned by",
+          "description": "Change in Loss Occurrence definition",
+          "importance": 0.85
+        },
+        {
+          "oldValue": null,
+          "newValue": "the Company may be included in the Company's loss occurrence. However, an",
+          "description": "Change in how individual losses are included in the Company's loss occurrence",
+          "importance": 0.8
+        },
+        {
+          "oldValue": null,
+          "newValue": "individual loss subject to this subparagraph cannot be included in more than one loss",
+          "description": "Restriction on inclusion of individual losses in more than one loss occurrence",
+          "importance": 0.7
+        },
+        {
+          "oldValue": null,
+          "newValue": "The Company may choose the date and time when any such period of consecutive",
+          "description": "Company's ability to choose date and time for consecutive period",
+          "importance": 0.6
+        },
+        {
+          "oldValue": null,
+          "newValue": "of the first recorded individual loss sustained by the Company arising out of that disaster,",
+          "description": "Requirement for the first recorded individual loss in the Company's loss occurrences",
+          "importance": 0.7
+        },
+        {
+          "oldValue": null,
+          "newValue": "the same event shall be considered as having arisen from one \"Loss Occurrence.\"",
+          "description": "Definition of Loss Occurrence in case of multiple perils resulting from the same event",
+          "importance": 0.8
+        },
+        {
+          "oldValue": null,
+          "newValue": "Notwithstanding the foregoing, the hourly limitations as stated above shall not be exceeded",
+          "description": "Hourly limitations to be observed",
+          "importance": 0.7
+        },
+        {
+          "oldValue": null,
+          "newValue": "24\\X",
+          "description": "Change in numbering or description",
+          "importance": 0.4
+        },
+        {
+          "oldValue": null,
+          "newValue": "**--- PAGE BREAK ---**",
+          "description": "Change indicating a new page",
+          "importance": 0.5
+        },
+        {
+          "oldValue": null,
+          "newValue": "Broker ABC",
+          "description": "Introduction of Broker ABC in the document",
+          "importance": 0.6
+        },
+        {
+          "oldValue": null,
+          "newValue": "2. The Subscribing Reinsurer has become insolvent or has been placed into liquidation",
+          "description": "Definition of circumstances around a Subscribing Reinsurer's insolvency",
+          "importance": 0.8
+        },
+        {
+          "oldValue": null,
+          "newValue": "party involved in the presentation, defense or settlement of any claim covered hereunder.",
+          "description": "Addition of a new party involved in a claim",
+          "importance": 0.8
+        },
+        {
+          "oldValue": null,
+          "newValue": "C. However, this Article shall not apply where the loss has been incurred due to fraud by a",
+          "description": "Clarification on cases where article does not apply",
+          "importance": 0.6
+        },
+        {
+          "oldValue": null,
+          "newValue": "such reinsurer(s), whether such inability arises from the insolvency of such other",
+          "description": "Clarification on conditions for liability increase",
+          "importance": 0.7
+        },
+        {
+          "oldValue": null,
+          "newValue": "that, in the opinion of the Company, may materially affect the position of the Reinsurer.",
+          "description": "The Company will advise the Reinsurer of losses that may significantly impact the Reinsurer.",
+          "importance": 0.8
+        },
+        {
+          "oldValue": null,
+          "newValue": "24\\X",
+          "description": "Change in page numbering could lead to misinterpretation or confusion.",
+          "importance": 0.7
+        },
+        {
+          "oldValue": null,
+          "newValue": "1. What constitutes a claim or loss covered under any Policy;",
+          "description": "Clarification of what constitutes a claim or loss has been added.",
+          "importance": 0.6
+        },
+        {
+          "oldValue": null,
+          "newValue": "2. The Company's liability thereunder;",
+          "description": "Specification of the Company's liability under the policy.",
+          "importance": 0.7
+        },
+        {
+          "oldValue": null,
+          "newValue": "3. The amount or amounts the Company shall pay thereunder.",
+          "description": "Specification of the payment amounts by the Company under the policy.",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "Wall Street Journal on the first business day of the month for which the calculation is",
+          "newValue": "made, plus 1.0%; times",
+          "description": "Change in interest calculation method",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "made, plus 1.0%; times",
+          "newValue": "Interest shall accumulate until payment of the original amount due plus interest penalties",
+          "description": "Change in the handling of accrued interest",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "Interest shall accumulate until payment of the original amount due plus interest penalties",
+          "newValue": "has been received by the Intermediary.",
+          "description": "Clarification on interest accrual",
+          "importance": 0.6
+        },
+        {
+          "oldValue": "has been received by the Intermediary.",
+          "newValue": "B. The due date shall, for purposes of this Article, be determined as follows:",
+          "description": "Shift in defining the due date",
+          "importance": 0.6
+        },
+        {
+          "oldValue": "B. The due date shall, for purposes of this Article, be determined as follows:",
+          "newValue": "1. Payments from the Reinsurer to the Company shall be due on the date on which the",
+          "description": "Change in due date criteria",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "1. Payments from the Reinsurer to the Company shall be due on the date on which the",
+          "newValue": "demand for payment (including delivery of bordereaux or quarterly or monthly reports)",
+          "description": "Specification of due date basis",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "demand for payment (including delivery of bordereaux or quarterly or monthly reports)",
+          "newValue": "is received by the Reinsurer, and shall be overdue 30 days thereafter.",
+          "description": "Change in overdue payment terms",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "is received by the Reinsurer, and shall be overdue 30 days thereafter.",
+          "newValue": "2. Payments from the Company to the Reinsurer shall be due on the dates specified",
+          "description": "Shift in payment dates",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "2. Payments from the Company to the Reinsurer shall be due on the dates specified",
+          "newValue": "within this Contract. Payments shall be overdue 30 days thereafter except for the first",
+          "description": "Clarification on payment terms",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "within this Contract. Payments shall be overdue 30 days thereafter except for the first",
+          "newValue": "installment of premium, if applicable, which shall be overdue 60 days from inception or",
+          "description": "Condition on premium installment",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "installment of premium, if applicable, which shall be overdue 60 days from inception or",
+          "newValue": "30 days from final line-signing, whichever the later.",
+          "description": "Adjustment in premium overdue period",
+          "importance": 0.7
+        },
+        {
+          "oldValue": null,
+          "newValue": "+ under this Contract or any other contract heretofore or hereafter entered between the",
+          "description": "Change in the scope of contracts subject to the right of offset",
+          "importance": 0.7
+        },
+        {
+          "oldValue": null,
+          "newValue": "+ Article 19 - Currency",
+          "description": "Addition of a new section related to currency",
+          "importance": 0.6
+        },
+        {
+          "oldValue": null,
+          "newValue": "+ United States Dollars.",
+          "description": "Specification of currency denomination",
+          "importance": 0.8
+        },
+        {
+          "oldValue": null,
+          "newValue": "+ B. For purposes of this Contract, where the Company receives premiums or pays losses in",
+          "description": "Clarification on premiums and losses currency",
+          "importance": 0.7
+        },
+        {
+          "oldValue": null,
+          "newValue": "insurance regulatory authorities), prior to any expiration date the issuing bank shall notify",
+          "description": "Change in notification requirement by the issuing bank",
+          "importance": 0.75
+        },
+        {
+          "oldValue": null,
+          "newValue": "the Company by certified or registered mail that the issuing bank elects not to consider the",
+          "description": "Notification from issuing bank about not considering LOC extension",
+          "importance": 0.8
+        },
+        {
+          "oldValue": null,
+          "newValue": "LOC extended for any additional period.",
+          "description": "Extension of LOC for additional period agreement",
+          "importance": 0.85
+        },
+        {
+          "oldValue": null,
+          "newValue": "E. The Reinsurer and the Company agree that any funding provided by the Reinsurer",
+          "description": "Agreement on funding provided by the Reinsurer",
+          "importance": 0.8
+        },
+        {
+          "oldValue": null,
+          "newValue": "pursuant to the provisions of this Contract may be drawn upon at any time, notwithstanding",
+          "description": "Provision for drawing funding provided by the Reinsurer",
+          "importance": 0.7
+        },
+        {
+          "oldValue": null,
+          "newValue": "any other provision of this Contract, and be utilized by the Company or any successor, by",
+          "description": "Utilization of funding provided by the Reinsurer by the Company or its successor",
+          "importance": 0.75
+        },
+        {
+          "oldValue": null,
+          "newValue": "operation of law, of the Company including, without limitation, any liquidator, rehabilitator,",
+          "description": "Conditions for utilization of funding in case of legal situations",
+          "importance": 0.8
+        },
+        {
+          "oldValue": null,
+          "newValue": "receiver or conservator of the Company, for the following purposes, unless otherwise",
+          "description": "Clarification on purpose of funds in different legal situations",
+          "importance": 0.8
+        },
+        {
+          "oldValue": null,
+          "newValue": "provided for in a separate Trust Agreement:",
+          "description": "Inclusion of Trust Agreement provision",
+          "importance": 0.75
+        },
+        {
+          "oldValue": null,
+          "newValue": "date, the Company shall, within 30 days after receipt of written request from the",
+          "description": "Change in timeline for releasing excess credit by the Reinsurer",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "LOC reducing the amount of credit available by the amount of such excess credit.",
+          "newValue": "Should another method of funding be used, the Company shall, within the time period",
+          "description": "Change in the process of reducing excess funding",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "+ outlined above, decrease such funding by the amount of such excess.",
+          "newValue": "+ Notwithstanding any other provision of this Article, as respects a Reinsurer that is a",
+          "description": "Clarification on the provision for certain Reinsurers",
+          "importance": 0.6
+        },
+        {
+          "oldValue": "+ Reciprocal Jurisdiction Reinsurer, the Reinsurer agrees to provide collateral for 100% of the",
+          "newValue": "+ Reinsurer's Obligations under this Contract, if the Reinsurer resists enforcement of a final",
+          "description": "Requirement for specific Reinsurers to provide collateral",
+          "importance": 0.9
+        },
+        {
+          "oldValue": "+ Reinsurer's Obligations under this Contract, if the Reinsurer resists enforcement of a final",
+          "newValue": "+ properly enforceable arbitration or arbitral award, whether obtained by the Company or by",
+          "description": "Expansion of situations triggering collateral provision",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "+ properly enforceable arbitration or arbitral award, whether obtained by the Company or by",
+          "newValue": "+ its legal successor on behalf of its resolution estate, if applicable.",
+          "description": "Inclusion of legal successor in collateral provision",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "+ its legal successor on behalf of its resolution estate, if applicable.",
+          "newValue": "+ Further, with respect to Certain Underwriting Members of Lloyd's, this Contract does not",
+          "description": "Clarification on the scope of the contract for certain members of Lloyd's",
+          "importance": 0.6
+        },
+        {
+          "oldValue": "+ Deed. Therefore, the Company does not have recourse to those trust funds with respect to",
+          "newValue": "+ this Contract.",
+          "description": "Limitation of Company's access to trust funds",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "+ this Contract.",
+          "newValue": "+ Article 21 - Taxes",
+          "description": "Transition to the next section on Taxes",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "+ Article 21 - Taxes",
+          "newValue": "+ A. In consideration of the terms under which this Contract is issued, the Company undertakes",
+          "description": "Introduction of Company's undertaking regarding premium deductions",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "+ A. In consideration of the terms under which this Contract is issued, the Company undertakes",
+          "newValue": "+ not to claim any deduction of the premium hereon when making tax returns, other than",
+          "description": "Specific provision for non-deduction of premium",
+          "importance": 0.9
+        },
+        {
+          "oldValue": "+ not to claim any deduction of the premium hereon when making tax returns, other than",
+          "newValue": "+ Broker ABC",
+          "description": "Identification of specific entity regarding tax deductions",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "+ Broker ABC",
+          "newValue": "+ 24\\X",
+          "description": "Transition to next section or continuation of content",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "+ 24\\X",
+          "newValue": "+ **--- PAGE BREAK ---**",
+          "description": "Introduction of page break",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "+ **--- PAGE BREAK ---**",
+          "newValue": "+ Income or Profits Tax returns, to any state or territory of the United States of America or to",
+          "description": "Continuation of Tax-related content",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "+ Income or Profits Tax returns, to any state or territory of the United States of America or to",
+          "newValue": "+ the District of Columbia.",
+          "description": "Specific inclusion of the District of Columbia",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "+ the District of Columbia.",
+          "newValue": "+ Federal Excise Tax, the applicable percentage of the premium payable hereon (as",
+          "description": "Transition to the Federal Excise Tax section",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "+ Federal Excise Tax, the applicable percentage of the premium payable hereon (as",
+          "newValue": "+ imposed under the Internal Revenue Code) to the extent such premium is subject to",
+          "description": "Further details on the Federal Excise Tax implementation",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "+ imposed under the Internal Revenue Code) to the extent such premium is subject to",
+          "newValue": "+ Federal Excise Tax.",
+          "description": "Transition to the completion of Federal Excise Tax discussion",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "+ Federal Excise Tax.",
+          "newValue": "+ 2. In the event of any return of premium becoming due hereunder, the Subscribing",
+          "description": "Introduction of return of premium scenario",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "+ 2. In the event of any return of premium becoming due hereunder, the Subscribing",
+          "newValue": "+ Reinsurer shall deduct the applicable percentage of the premium from the amount of",
+          "description": "Clarification on premium deduction process",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "+ Reinsurer shall deduct the applicable percentage of the premium from the amount of",
+          "newValue": "+ the return, and the Company or its agent should take steps to recover the Tax from",
+          "description": "Instructions regarding recovery of Tax from premium returns",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "+ the return, and the Company or its agent should take steps to recover the Tax from",
+          "newValue": "+ the U.S. Government.",
+          "description": "Designation of entity for Tax recovery",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "+ the U.S. Government.",
+          "newValue": "+ Article 22 - Access to Records",
+          "description": "Transition to the next section on Access to Records",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "+ Article 22 - Access to Records",
+          "newValue": "+ A. The Reinsurer or its duly authorized representatives shall have the right to visit the offices",
+          "description": "Introduction of the Reinsurer's right to access records",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "+ A. The Reinsurer or its duly authorized representatives shall have the right to visit the offices",
+          "newValue": "+ of the Company to inspect, examine, audit, and verify any of the Policy, accounting or claim",
+          "description": "Expanding on the purpose of access to records",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "+ of the Company to inspect, examine, audit, and verify any of the Policy, accounting or claim",
+          "newValue": "+ files (\"Records\") relating to business reinsured under this Contract during regular business",
+          "description": "Specification of the type of records accessible",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "+ files (\"Records\") relating to business reinsured under this Contract during regular business",
+          "newValue": "+ hours after giving five working days prior notice. This right shall be exercisable during the",
+          "description": "Defining the process and timeline for access to records",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "+ hours after giving five working days prior notice. This right shall be exercisable during the",
+          "newValue": "+ term of this Contract or after the termination or expiration of this Contract.",
+          "description": "Scope of access to records over Contract timeline",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "+ term of this Contract or after the termination or expiration of this Contract.",
+          "newValue": "+ B. Notwithstanding the foregoing, a Subscribing Reinsurer shall not have any right of access",
+          "description": "Exception to the access right for specific Reinsurers",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "+ B. Notwithstanding the foregoing, a Subscribing Reinsurer shall not have any right of access",
+          "newValue": "+ to the Records of the Company if the Subscribing Reinsurer is not current in all Undisputed",
+          "description": "Condition for access to records based on payment status",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "+ to the Records of the Company if the Subscribing Reinsurer is not current in all Undisputed",
+          "newValue": "+ under the provisions of this Contract is either not in place or deficient in some manner.",
+          "description": "Requirement for payment and security compliance for access",
+          "importance": 0.9
+        },
+        {
+          "oldValue": "+ under the provisions of this Contract is either not in place or deficient in some manner.",
+          "newValue": "+ \"Undisputed\" as used herein shall mean any amount that the Subscribing Reinsurer has not",
+          "description": "Definition of 'Undisputed' amounts",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "+ \"Undisputed\" as used herein shall mean any amount that the Subscribing Reinsurer has not",
+          "newValue": "+ contested in writing to the Company within 30 days after the date the Subscribing Reinsurer",
+          "description": "Action to be taken for disputed payments",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "+ contested in writing to the Company within 30 days after the date the Subscribing Reinsurer",
+          "newValue": "+ receives notification of the loss, specifying the reason(s) why the payments are disputed.",
+          "description": "Clarification on the process for disputing payments",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "+ receives notification of the loss, specifying the reason(s) why the payments are disputed.",
+          "newValue": "+ Article 23 - Confidentiality",
+          "description": "Transition to the next section on Confidentiality",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "+ Article 23 - Confidentiality",
+          "newValue": "+ A. The Reinsurer hereby acknowledges that the documents, data and other written information",
+          "description": "Acknowledgment of Reinsurer on confidentiality matters",
+          "importance": 0.8
+        },
+        {
+          "oldValue": null,
+          "newValue": "connection with the placement and execution of this Contract (\"Confidential Information\")",
+          "description": "Adding description of Confidential Information provided by the Company to the Reinsurer",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "+ connection with the placement and execution of this Contract (\"Confidential Information\")",
+          "newValue": "shall not include documents, information or data that the Reinsurer can show:",
+          "description": "Change from defining Confidential Information to exceptions",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "shall not include documents, information or data that the Reinsurer can show:",
+          "newValue": "Are publicly known or have become publicly known through no unauthorized act of the",
+          "description": "Further refinement of exceptions to Confidential Information",
+          "importance": 0.6
+        },
+        {
+          "oldValue": "Are publicly known or have become publicly known through no unauthorized act of the",
+          "newValue": "Reinsurer;",
+          "description": "Explicit identification that information publicly known is about the Reinsurer",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "Reinsurer;",
+          "newValue": "Have been rightfully received from a third person without obligation of confidentiality;",
+          "description": "Allowance for information received from a third party",
+          "importance": 0.6
+        },
+        {
+          "oldValue": "Have been rightfully received from a third person without obligation of confidentiality;",
+          "newValue": "Were known by the Reinsurer prior to the placement of this Contract without an",
+          "description": "Inclusion of prior knowledge as an exception",
+          "importance": 0.6
+        },
+        {
+          "oldValue": null,
+          "newValue": "obligation of confidentiality; or",
+          "description": "Specification of alternative options to avoid the confidentiality clause",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "obligation of confidentiality; or",
+          "newValue": "Were independently developed by the Reinsurer or its affiliates not otherwise in",
+          "description": "Introduction of independent development as an exception",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "Were independently developed by the Reinsurer or its affiliates not otherwise in",
+          "newValue": "violation or breach of this Article.",
+          "description": "Clarity on the terms of independent development",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "violation or breach of this Article.",
+          "newValue": "Broker ABC",
+          "description": "Specific reference to Broker ABC",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "arbitrators shall be in writing and shall be final and binding. The panel is empowered to",
+          "newValue": "grants interim relief as it may deem appropriate.",
+          "description": "Change in the powers of the panel of arbitrators",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "applicable insurance and reinsurance business as promptly as possible after the hearings.",
+          "newValue": "Judgment upon an award may be entered in any court having jurisdiction thereof.",
+          "description": "Change in the process of entering judgment upon an award",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "with the other party the cost of the third arbitrator. The remaining costs of the arbitration",
+          "newValue": "shall be allocated by the panel. The panel may, at its discretion, award such further costs",
+          "description": "Change in the cost allocation process in arbitration",
+          "importance": 0.6
+        },
+        {
+          "oldValue": null,
+          "newValue": "Broker ABC",
+          "description": "Change in the reinsurance broker",
+          "importance": 0.8
+        },
+        {
+          "oldValue": null,
+          "newValue": "24\\X",
+          "description": "Change in the formatting or section numbering",
+          "importance": 0.2
+        },
+        {
+          "oldValue": null,
+          "newValue": "Page 23",
+          "description": "Change in the page numbering",
+          "importance": 0.3
+        },
+        {
+          "oldValue": null,
+          "newValue": "**--- PAGE BREAK ---**",
+          "description": "Change in the formatting or page break",
+          "importance": 0.1
+        },
+        {
+          "oldValue": null,
+          "newValue": "Article 29 - Entire Agreement",
+          "description": "Change in the agreement article heading",
+          "importance": 0.5
+        },
+        {
+          "change": "- B. The adjusted premium for each excess layer shall be calculated at December 31, 2023",
+          "context_before": "- \n- paragraph B below.\n- \n",
+          "context_after": "- \n- using reported exposure data as of October 1, 2023 to calculate the Average October 1,\n- \n"
+        },
+        {
+          "oldValue": "using reported exposure data as of October 1, 2023 to calculate the Average October 1,",
+          "newValue": "Total deposit premium for the excess layer in Schedule A attached hereto + ((Average",
+          "description": "Adjustment in the premium calculation method",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "Total deposit premium for the excess layer in Schedule A attached hereto + ((Average",
+          "newValue": "premium for the excess layer).",
+          "description": "Final premium calculation adjustment",
+          "importance": 0.7
+        },
+        {
+          "oldValue": null,
+          "newValue": "this Contract if it would result in a violation of any mandatory sanction, prohibition or restriction",
+          "description": "Change in liability conditions related to sanctions",
+          "importance": 0.9
+        },
+        {
+          "oldValue": null,
+          "newValue": "under United Nations resolutions or the trade or economic sanctions, laws or regulations of the",
+          "description": "Change in liability conditions related to sanctions",
+          "importance": 0.9
+        },
+        {
+          "oldValue": null,
+          "newValue": "European Union, United Kingdom or United States of America that are applicable to either party.",
+          "description": "Change in liability conditions related to sanctions",
+          "importance": 0.9
+        },
+        {
+          "oldValue": null,
+          "newValue": "A. 1. The term \"Ultimate Net Loss\" as used in this Contract means the actual loss paid by",
+          "description": "Definition included in the contract",
+          "importance": 0.7
+        },
+        {
+          "oldValue": null,
+          "newValue": "Loss Adjustment Expense, Extra Contractual Obligations (and expense) as defined in",
+          "description": "Expenses included in the Ultimate Net Loss definition",
+          "importance": 0.8
+        },
+        {
+          "oldValue": null,
+          "newValue": "as defined in the Excess of Original Policy Limits Article.",
+          "description": "Expenses included in the Ultimate Net Loss definition",
+          "importance": 0.8
+        },
+        {
+          "oldValue": null,
+          "newValue": "2. Salvages and all recoveries (including amounts due from all reinsurances that inure to",
+          "description": "Expenses included in the Ultimate Net Loss definition",
+          "importance": 0.8
+        },
+        {
+          "oldValue": null,
+          "newValue": "the benefit of this Contract, whether recovered or not) shall be first deducted from",
+          "description": "Expenses included in the Ultimate Net Loss definition",
+          "importance": 0.8
+        },
+        {
+          "oldValue": null,
+          "newValue": "such loss to arrive at the amount of liability attaching hereunder.",
+          "description": "Expenses included in the Ultimate Net Loss definition",
+          "importance": 0.8
+        },
+        {
+          "oldValue": null,
+          "newValue": "3. All salvages, recoveries or payments recovered or received subsequent to loss",
+          "description": "Adjusting payments after loss",
+          "importance": 0.6
+        },
+        {
+          "oldValue": null,
+          "newValue": "settlement hereunder shall be applied as if recovered or received prior to the aforesaid",
+          "description": "Adjusting payments after loss",
+          "importance": 0.6
+        },
+        {
+          "oldValue": null,
+          "newValue": "subsequent to the aforesaid",
+          "description": "Adjusting payments after loss",
+          "importance": 0.6
+        },
+        {
+          "oldValue": null,
+          "newValue": "168 consecutive hours arising out of and directly occasioned by the same event except that",
+          "description": "Change in defining the duration and extent of a Loss Occurrence",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "168 consecutive hours arising out of and directly occasioned by the same event except that",
+          "newValue": "the term \"Loss Occurrence\" shall be further defined as follows:",
+          "description": "Change in defining the duration and extent of a Loss Occurrence",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "the term \"Loss Occurrence\" shall be further defined as follows:",
+          "newValue": "1. As regards a storm or storm system that has been declared by a Reporting Agency to",
+          "description": "Change in defining Loss Occurrence for a storm or storm system",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "1. As regards a storm or storm system that has been declared by a Reporting Agency to",
+          "newValue": "be a hurricane at any time, which may include, by way of example, windstorm, hail,",
+          "description": "Change in defining Loss Occurrence for a hurricane",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "be a hurricane at any time, which may include, by way of example, windstorm, hail,",
+          "newValue": "tornado, hurricane, tropical storm, cyclone caused by, resulting from or occurring",
+          "description": "Expanding the definition of Loss Occurrence for a hurricane",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "tornado, hurricane, tropical storm, cyclone caused by, resulting from or occurring",
+          "newValue": "during such storm or storm system (each, a \"Hurricane\"), all individual losses",
+          "description": "Clarification of individual losses during a hurricane event",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "during such storm or storm system (each, a \"Hurricane\"), all individual losses",
+          "newValue": "sustained during any period: (i) beginning at the time a Hurricane \"watch,\" \"warning,\"",
+          "description": "Defining the period for individual losses during a hurricane event",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "sustained during any period: (i) beginning at the time a Hurricane \"watch,\" \"warning,\"",
+          "newValue": "advisory or other bulletin is first issued for the territory in question by a Reporting",
+          "description": "Clarification of the starting point for considering individual losses during a hurricane event",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "advisory or other bulletin is first issued for the territory in question by a Reporting",
+          "newValue": "Agency with respect to such Hurricane; (ii) continuing for the time period thereafter",
+          "description": "Transition phase after a hurricane event trigger",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "Agency with respect to such Hurricane; (ii) continuing for the time period thereafter",
+          "newValue": "during which such Hurricane continues, regardless of its category rating and",
+          "description": "Duration of monitoring after a hurricane event trigger",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "during which such Hurricane continues, regardless of its category rating and",
+          "newValue": "regardless of whether a \"watch,\" or \"warning,\" advisory or bulletin remain in force for",
+          "description": "Condition for monitoring and alerts during a hurricane event",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "regardless of whether a \"watch,\" or \"warning,\" advisory or bulletin remain in force for",
+          "newValue": "such Hurricane; and (iii) ending 96 hours following the issuance of the last \"watch,\"",
+          "description": "End condition for monitoring after a hurricane event trigger",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "period greater than 168 consecutive hours, except as otherwise provided in subparagraph 1",
+          "newValue": null,
+          "description": "Definition change",
+          "importance": 0.5
+        },
+        {
+          "oldValue": null,
+          "newValue": "Policy",
+          "description": "Definition change",
+          "importance": 0.5
+        },
+        {
+          "oldValue": "D. \"Policy\" or \"Policies\" means any binder, policy, or contract and/or evidences of liability",
+          "newValue": null,
+          "description": "Definition change",
+          "importance": 0.5
+        },
+        {
+          "oldValue": null,
+          "newValue": "Policy",
+          "description": "Definition change",
+          "importance": 0.5
+        },
+        {
+          "oldValue": "whether oral or written of residential insurance, as classified by the Company, which are",
+          "newValue": null,
+          "description": "Definition change",
+          "importance": 0.5
+        },
+        {
+          "oldValue": null,
+          "newValue": "Policy",
+          "description": "Definition change",
+          "importance": 0.5
+        },
+        {
+          "oldValue": "accepted, bound or covered, provisionally or otherwise, by or on behalf of the Company.",
+          "newValue": null,
+          "description": "Definition change",
+          "importance": 0.5
+        },
+        {
+          "oldValue": null,
+          "newValue": "Policy",
+          "description": "Definition change",
+          "importance": 0.5
+        },
+        {
+          "oldValue": "- whether oral or written of residential insurance, as classified by the Company, which are",
+          "newValue": null,
+          "description": "Definition change",
+          "importance": 0.5
+        },
+        {
+          "oldValue": null,
+          "newValue": "Runoff Subscribing Reinsurer",
+          "description": "Definition change",
+          "importance": 0.5
+        },
+        {
+          "oldValue": "- accepted, bound or covered, provisionally or otherwise, by or on behalf of the Company.",
+          "newValue": null,
+          "description": "Definition change",
+          "importance": 0.5
+        },
+        {
+          "oldValue": null,
+          "newValue": "Runoff Subscribing Reinsurer",
+          "description": "Definition change",
+          "importance": 0.5
+        },
+        {
+          "oldValue": "- E. \"Runoff Subscribing Reinsurer\" as used in this Contract shall mean a Subscribing Reinsurer",
+          "newValue": null,
+          "description": "Definition change",
+          "importance": 0.5
+        },
+        {
+          "oldValue": null,
+          "newValue": "Runoff Subscribing Reinsurer",
+          "description": "Definition change",
+          "importance": 0.5
+        },
+        {
+          "oldValue": "-that experiences one or more of the following circumstances:",
+          "newValue": null,
+          "description": "Definition change",
+          "importance": 0.5
+        },
+        {
+          "oldValue": null,
+          "newValue": "Runoff Subscribing Reinsurer",
+          "description": "Definition change",
+          "importance": 0.5
+        },
+        {
+          "oldValue": "- 1. A State Insurance Department or other legal authority has ordered the Subscribing",
+          "newValue": null,
+          "description": "Insolvency or liquidation trigger",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "nuclear installation, or",
+          "newValue": "",
+          "description": "Change in coverage terms",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "caused by or resulting from radioactive contamination, however caused. However on",
+          "newValue": "radioactive contamination exclusion provision has been approved by the",
+          "description": "Change in coverage terms",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "radioactive contamination exclusion provision has been approved by the",
+          "newValue": "Governmental Authority having jurisdiction thereof.",
+          "description": "Change in coverage terms",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "Governmental Authority having jurisdiction thereof.",
+          "newValue": "",
+          "description": "Change in coverage terms",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "4. Without in any way restricting the operations of paragraphs (1), (2) and (3) hereof, this",
+          "newValue": "Reinsurance does not cover any loss or liability by radioactive contamination accruing to the",
+          "description": "Change in coverage terms",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "Reinsurance does not cover any loss or liability by radioactive contamination accruing to the",
+          "newValue": "Reassured, directly or indirectly, and whether as Insurer or Reinsurer, when such",
+          "description": "Change in coverage terms",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "Reassured, directly or indirectly, and whether as Insurer or Reinsurer, when such",
+          "newValue": "radioactive contamination is a named hazard specifically insured against.",
+          "description": "Change in coverage terms",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "radioactive contamination is a named hazard specifically insured against.",
+          "newValue": "",
+          "description": "Change in coverage terms",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "5. It is understood and agreed that this clause shall not extend to risks using radioactive",
+          "newValue": "isotopes in any form where the nuclear exposure is not considered by the Reassured to be",
+          "description": "Change in coverage terms",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "isotopes in any form where the nuclear exposure is not considered by the Reassured to be",
+          "newValue": "",
+          "description": "Change in coverage terms",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "6. The term \"special nuclear material\" shall have the meaning given it in the Atomic Energy",
+          "newValue": "Act of 1954 or by any law amendatory thereof.",
+          "description": "Change in coverage terms",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "Act of 1954 or by any law amendatory thereof.",
+          "newValue": "",
+          "description": "Change in coverage terms",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "Broker ABC",
+          "newValue": "",
+          "description": "Change in coverage terms",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "- 23\\X",
+          "newValue": "",
+          "description": "Change in coverage terms",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "?       ^",
+          "newValue": "",
+          "description": "Change in coverage terms",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "- Page 27",
+          "newValue": "",
+          "description": "Change in coverage terms",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "?       ^",
+          "newValue": "",
+          "description": "Change in coverage terms",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "15. Without in any way restricting the operation of sub-paragraph",
+          "newValue": "",
+          "description": "Change in coverage terms",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "+ Page 28",
+          "newValue": "",
+          "description": "Change in coverage terms",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "**--- PAGE BREAK ---**",
+          "newValue": "",
+          "description": "Change in coverage terms",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "12/12/57",
+          "newValue": "NMA 1119",
+          "description": "Change of clause name",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "NOTES: Wherever used herein the terms:",
+          "newValue": "- |              |",
+          "description": "Change in definition terms format",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "- | terms:       | terms:                                                                                                                                                                               |",
+          "newValue": "+ |              |                                                                                                                                                                                      |",
+          "description": "Formatting change in terms",
+          "importance": 0.6
+        },
+        {
+          "oldValue": "| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |",
+          "newValue": "| ",
+          "description": "Change in definition format",
+          "importance": 0.75
+        },
+        {
+          "oldValue": "- | ",
+          "newValue": "+ | ",
+          "description": "Change in definition format",
+          "importance": 0.75
+        },
+        {
+          "oldValue": "- Broker ABC",
+          "newValue": "- 23\\X",
+          "description": "Change in terms",
+          "importance": 0.65
+        },
+        {
+          "oldValue": "- 23\\X",
+          "newValue": "+ 24\\X",
+          "description": "Change in terms",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "+ Page 29",
+          "newValue": "Limited Communicable Disease Exclusion No. 2",
+          "description": "Change in content",
+          "importance": 0.9
+        },
+        {
+          "oldValue": "Limited Communicable Disease Exclusion No. 2",
+          "newValue": "1. Notwithstanding any provision to the contrary within this reinsurance agreement, this",
+          "description": "Change in content",
+          "importance": 0.9
+        },
+        {
+          "oldValue": "1. Notwithstanding any provision to the contrary within this reinsurance agreement, this",
+          "newValue": "reinsurance agreement excludes any loss, damage, liability, claim, cost or expense of",
+          "description": "Change in content",
+          "importance": 0.9
+        },
+        {
+          "oldValue": "reinsurance agreement excludes any loss, damage, liability, claim, cost or expense of",
+          "newValue": "whatsoever nature, directly caused by, contributed to by, resulting from, arising",
+          "description": "Change in content",
+          "importance": 0.85
+        },
+        {
+          "oldValue": "- whatsoever nature, directly or indirectly caused by, contributed to by, resulting from, arising",
+          "newValue": "+ whatsoever nature, directly caused by, contributed to by, resulting from, arising",
+          "description": "Change in content",
+          "importance": 0.8
+        },
+        {
+          "oldValue": "or perceived) of a Communicable Disease regardless of any other cause or event",
+          "newValue": "+ whatsoever nature, directly caused by, contributed to by, resulting from, arising",
+          "description": "Change in content",
+          "importance": 0.85
+        },
+        {
+          "oldValue": null,
+          "newValue": "24\\X",
+          "description": "Change in treaty number",
+          "importance": 0.8
+        },
+        {
+          "oldValue": null,
+          "newValue": "Page 30",
+          "description": "Change in page number",
+          "importance": 0.6
+        },
+        {
+          "oldValue": null,
+          "newValue": "Cyber Loss Limited Exclusion Clause",
+          "description": "Change in document title",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "or expense of whatsoever nature directly or indirectly caused by, contributed to by, resulting",
+          "newValue": "or expense of whatsoever nature directly caused by, contributed to by, resulting",
+          "description": "Clarification on the nature of expense causes",
+          "importance": 0.5
+        },
+        {
+          "oldValue": null,
+          "newValue": "1. Requires the Reinsurer to establish a trust account for the benefit of the Company,",
+          "description": "Trust Agreement specifies trust account establishment",
+          "importance": 0.8
+        },
+        {
+          "oldValue": null,
+          "newValue": "2. Stipulates that assets deposited in the trust account shall be valued according to their",
+          "description": "Specification of asset valuation in the trust account",
+          "importance": 0.7
+        },
+        {
+          "oldValue": null,
+          "newValue": "certificates of deposit (issued by a United States bank and payable in United States",
+          "description": "Inclusion of certificates of deposit in trust account assets",
+          "importance": 0.6
+        },
+        {
+          "oldValue": null,
+          "newValue": "legal tender), and investments of the types permitted by the regulatory authorities",
+          "description": "Inclusion of investments permitted by regulatory authorities in trust account assets",
+          "importance": 0.6
+        },
+        {
+          "oldValue": null,
+          "newValue": "provided that the investments are issued by an institution that is not the parent,",
+          "description": "Requirement for investments issued by non-parent institution in trust account assets",
+          "importance": 0.7
+        },
+        {
+          "oldValue": null,
+          "newValue": "3. Requires the Reinsurer, prior to depositing assets with the trustee, to execute",
+          "description": "Requirement for Reinsurer to execute actions prior to asset deposit",
+          "importance": 0.8
+        },
+        {
+          "oldValue": null,
+          "newValue": "4. Requires that all settlements of account between the Company and the Reinsurer be",
+          "description": "Specification for settlements of account between Company and Reinsurer",
+          "importance": 0.7
+        },
+        {
+          "oldValue": null,
+          "newValue": "5. Provides that assets in the trust account shall be withdrawn only as permitted in this",
+          "description": "Specification for withdrawal of assets from trust account",
+          "importance": 0.8
+        },
+        {
+          "oldValue": null,
+          "newValue": "If there are multiple ceding insurers that collectively comprise the Company,",
+          "description": "Change in definition of ceding insurers",
+          "importance": 0.8
+        },
+        {
+          "oldValue": null,
+          "newValue": "authorities",
+          "description": "Change in reference to regulatory authorities",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "laws or regulations of another state, such laws or regulations shall apply to the extent not in",
+          "newValue": "conflict with those of such ceding insurer's domicile.",
+          "description": "Change in application of laws or regulations",
+          "importance": 0.9
+        },
+        {
+          "oldValue": "- Broker ABC",
+          "newValue": null,
+          "description": "Removal of a specific broker reference",
+          "importance": 0.6
+        },
+        {
+          "oldValue": "- 23\\X",
+          "newValue": "+ 24\\X",
+          "description": "Change in report page number",
+          "importance": 0.7
+        },
+        {
+          "oldValue": "- Page 32",
+          "newValue": "+ Page 33",
+          "description": "Change in page number",
+          "importance": 0.8
+        }
+      ]
+    }
+  },
+  "macroeconomicAnalysis": {
+    "fx_rates": {
+      "average_rates": {
+        "USD": 1.183285492768749
+      },
+      "rate_of_changes": {
+        "USD": 0.0005808478007291013
+      },
+      "trends": {
+        "USD": "Increasing"
+      },
+      "min_max_rates": {
+        "USD": {
+          "min": 0.8252,
+          "max": 1.599
+        }
+      }
+    },
+    "inflation_rates": {
+      "average_inflation": 4.87,
+      "trend": "Decreasing",
+      "annualized_inflation": 39.61,
+      "last_12_months_inflation": [
+        3.48,
+        3.36,
+        3.27,
+        2.97,
+        2.89,
+        2.53,
+        2.44,
+        2.6,
+        2.75,
+        2.89,
+        3.0,
+        2.82
+      ]
+    },
+    "interest_rates": {
+      "interest_rate_name": "IR3TIB01USM156N",
+      "average_rate": 5.0941265474552955,
+      "rate_of_change": 0.691127486545901,
+      "trend": "Decreasing",
+      "min_max_rates": {
+        "min": 0.09,
+        "max": 18.65
+      }
+    }
+  },
+  "cedantRiskAnalysis": {
+    "2024_submission": {
+      "response": [
+        {
+          "data_point": "Policies with wind coverage",
+          "comparison": "Increase from 86,307 to 125,899 policies",
+          "possible_risk": "Higher exposure to wind-related claims due to increased policy count",
+          "risk_score": 0.8
+        },
+        {
+          "data_point": "Total Insured Value (TIV)",
+          "comparison": "Increase from $42,954M to $68,449M",
+          "possible_risk": "Increased financial exposure due to a rise in TIV",
+          "risk_score": 0.7
+        },
+        {
+          "data_point": "Hurricane deductibles",
+          "comparison": "Increase in high deductible policies from 24,058 to 34,784 for $5,000 to $7,500 range",
+          "possible_risk": "Decreased potential loss due to higher deductibles",
+          "risk_score": -0.5
+        },
+        {
+          "data_point": "Losses from Hurricane Irma",
+          "comparison": "Total incurred loss $319M",
+          "possible_risk": "High historical loss from a single event indicates vulnerability",
+          "risk_score": 0.9
+        },
+        {
+          "data_point": "Distance to coast",
+          "comparison": "Assets located less than 1 mile from coast increased from $8,187M to $10,611M",
+          "possible_risk": "Higher potential damage from coastal storms",
+          "risk_score": 0.85
+        },
+        {
+          "data_point": "Modeled output based on 250-year event",
+          "comparison": "Increase from $480M to $741M",
+          "possible_risk": "Increased potential loss from catastrophic events",
+          "risk_score": 0.75
+        }
+      ]
+    }
+  }
+}

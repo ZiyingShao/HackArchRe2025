@@ -1,0 +1,40 @@
+{
+  "response": [
+    {
+      "data_point": "LocCount %change",
+      "comparison": "5.31% increase from 2023 to 2024",
+      "possible_risk": "Moderate increase in exposure",
+      "risk_score": 0.4
+    },
+    {
+      "data_point": "TIV %change",
+      "comparison": "5.29% increase from 2023 to 2024",
+      "possible_risk": "Slight increase in total insured value",
+      "risk_score": 0.3
+    },
+    {
+      "data_point": "LocCount change",
+      "comparison": "Increase of 117,558 locations from 2023",
+      "possible_risk": "Higher geographic spread",
+      "risk_score": 0.5
+    },
+    {
+      "data_point": "Unknown Construction and Occupancy Increase",
+      "comparison": "Significant increase in unknown categories",
+      "possible_risk": "Lack of data specificity",
+      "risk_score": 0.7
+    },
+    {
+      "data_point": "Belgium Exposure Increase",
+      "comparison": "14310.97% increase in Belgium locs",
+      "possible_risk": "New market entry or data correction",
+      "risk_score": 0.8
+    },
+    {
+      "data_point": "NL Decrease",
+      "comparison": "-2.04% decrease in Netherlands locs",
+      "possible_risk": "Potential withdrawal or consolidation",
+      "risk_score": -0.2
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "response": [
+    {
+      "data_point": "Policies with wind coverage",
+      "comparison": "Increase from 86,307 to 125,899 policies",
+      "possible_risk": "Higher exposure to wind-related claims due to increased policy count",
+      "risk_score": 0.8
+    },
+    {
+      "data_point": "Total Insured Value (TIV)",
+      "comparison": "Increase from $42,954M to $68,449M",
+      "possible_risk": "Increased financial exposure due to a rise in TIV",
+      "risk_score": 0.7
+    },
+    {
+      "data_point": "Hurricane deductibles",
+      "comparison": "Increase in high deductible policies from 24,058 to 34,784 for $5,000 to $7,500 range",
+      "possible_risk": "Decreased potential loss due to higher deductibles",
+      "risk_score": -0.5
+    },
+    {
+      "data_point": "Losses from Hurricane Irma",
+      "comparison": "Total incurred loss $319M",
+      "possible_risk": "High historical loss from a single event indicates vulnerability",
+      "risk_score": 0.9
+    },
+    {
+      "data_point": "Distance to coast",
+      "comparison": "Assets located less than 1 mile from coast increased from $8,187M to $10,611M",
+      "possible_risk": "Higher potential damage from coastal storms",
+      "risk_score": 0.85
+    },
+    {
+      "data_point": "Modeled output based on 250-year event",
+      "comparison": "Increase from $480M to $741M",
+      "possible_risk": "Increased potential loss from catastrophic events",
+      "risk_score": 0.75
+    }
+  ]
+}

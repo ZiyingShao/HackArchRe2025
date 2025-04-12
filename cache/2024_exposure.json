@@ -1,0 +1,34 @@
+{
+  "response": [
+    {
+      "data_point": "Total TRV for Belgium vs Netherlands",
+      "comparison": "Belgium: 20,213,411,064, Netherlands: 468,101,084,366",
+      "possible_risk": "Higher concentration of value in the Netherlands",
+      "risk_score": 0.7
+    },
+    {
+      "data_point": "Built Year Analysis",
+      "comparison": "Significant TRV in Unknown, multi-family (1951-1955), single-family (1956-1960)",
+      "possible_risk": "Older buildings may have structural risks",
+      "risk_score": 0.5
+    },
+    {
+      "data_point": "Geocode Resolution for Wind Peril",
+      "comparison": "Postal Code Centroid majority with 1,161,370 locations",
+      "possible_risk": "Potential underestimation of localized wind risk",
+      "risk_score": 0.6
+    },
+    {
+      "data_point": "Area Distribution in the Netherlands",
+      "comparison": "High TRV in NLD_10, NLD_30, NLD_75",
+      "possible_risk": "Concentration in specific areas may increase exposure",
+      "risk_score": 0.7
+    },
+    {
+      "data_point": "Overall TRV Comparison",
+      "comparison": "Total TRV: 488,314,495,430",
+      "possible_risk": "Broad distribution may mitigate risk",
+      "risk_score": -0.2
+    }
+  ]
+}

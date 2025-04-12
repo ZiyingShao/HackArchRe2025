@@ -1,0 +1,28 @@
+{
+  "response": [
+    {
+      "data_point": "Total OEP for 10,000 RP in 2024",
+      "comparison": "Comparing to 2023, the OEP for 10,000 RP increased from 3,260,447,469 to 3,400,108,775",
+      "possible_risk": "Higher exposure or potential loss amount in 2024",
+      "risk_score": 0.8
+    },
+    {
+      "data_point": "Total AEP for 5,000 RP in 2024",
+      "comparison": "AEP increased from 2,283,101,692 in 2023 to 2,393,533,513 in 2024",
+      "possible_risk": "Potential rise in aggregated losses",
+      "risk_score": 0.7
+    },
+    {
+      "data_point": "Standard Deviation for AEP in 2024",
+      "comparison": "Increased from 112,237,665 in 2023 to 118,175,526 in 2024",
+      "possible_risk": "Increased variability in potential outcomes",
+      "risk_score": 0.5
+    },
+    {
+      "data_point": "Percentage change for 1,000 RP in 2024",
+      "comparison": "OEP changed from 2.0% to 2.6% between ALL and WS",
+      "possible_risk": "Increased probability of large loss events",
+      "risk_score": 0.6
+    }
+  ]
+}
