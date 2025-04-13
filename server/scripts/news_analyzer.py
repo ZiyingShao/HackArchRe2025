@@ -443,7 +443,7 @@ if __name__ == "__main__":
         )  # <- assuming you have this method
         print(f"File: {os.path.basename(file_path)} | Top Locations: {top_locations}")
     use_predefined_keywords = True
-    given_keywords_location = ["Zurich"]
+    given_keywords_location = ["florida", "california"]
 
     if use_predefined_keywords:
         articles = analyzer.search_articles(given_keywords_location, auto_extract=False)
