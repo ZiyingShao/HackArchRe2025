@@ -1,236 +1,309 @@
 [
     {
-        "Title": "Article 700523 2022 12 22",
-        "Summary": "Howden, an international insurance broker, has agreed to acquire Assimovie, a leading TV, film, and advertising insurance broker in Italy, to create a Sport and Entertainment specialty for Italian clients. The acquisition will make Howden the largest TV and Film production broker in Italy and aims to establish it as a leading Sport and Entertainment broker in Europe.",
-        "Important Points": [
-            "Howden is acquiring Assimovie to enhance its expertise in the Sport and Entertainment sector in Italy and Europe.",
-            "Assimovie's founders highlight their success in becoming the broker of choice in the Italian market for TV and film insurance.",
-            "Financial details of the acquisition were not disclosed."
+        "Synthetic Title": "Swiss Re US Reserves Increase",
+        "Summary": "Swiss Re boosts US reserves by $2.4 billion.",
+        "Source Article Index": "Article 800405 2024 11 07",
+        "Nature of Risk": "Reserve adequacy and profitability risks in US operations.",
+        "Core Risks": [
+            "Underwriting Risk",
+            "Reserve Risk",
+            "Profitability Risk"
         ],
-        "Potential Risks": [
-            "Integration challenges between Howden and Assimovie may impact service delivery to clients.",
-            "Increased competition in the Italian insurance market post-acquisition could affect profitability.",
-            "Uncertainty regarding the impact of the acquisition on existing client relationships and service levels."
+        "Risk Factors": [
+            "Reserve assessment inaccuracies",
+            "Legal trend impact",
+            "CEO transition impact"
         ],
-        "Risk Level": "Medium",
-        "Risk Level Numeric": 1,
-        "Recommendation": "Monitor client feedback post-acquisition to ensure service standards are maintained and consider reassessing the competitive landscape in the Italian market to adjust pricing strategies if needed.",
+        "Suggestion for Risk Mitigation": "Enhance reserve monitoring processes and act swiftly on emerging trends.",
+        "Premium Outlook": "Consider a moderate premium increase to hedge against potential profit fluctuations.",
+        "Top Locations": [
+            "Zurich",
+            "P&C",
+            "US"
+        ],
         "Keywords": [
-            "insurance",
-            "market",
-            "risk"
-        ]
+            "Zurich"
+        ],
+        "Risk Matrix Data": [
+            {
+                "Event": "Potential profit downgrade",
+                "Impact": 2,
+                "Likelihood": 2
+            },
+            {
+                "Event": "Market skepticism on reserve adequacy",
+                "Impact": 2,
+                "Likelihood": 2
+            }
+        ],
+        "Average Impact Score": 2.0,
+        "Average Likelihood Score": 2.0,
+        "Risk Priority Number": 4.0,
+        "Risk Matrix Image": "./output/matrix_Article_800405_2024_11_07.png"
     },
     {
-        "Title": "Article 667038 2022 05 10",
-        "Summary": "Pool Re, Britain\u2019s leading terrorism reinsurer, announced a significant reduction in reinsurance pricing, aiming to enable the UK insurance market to underwrite terrorism risks at reflective rates. The reduction will vary by geographical location and will come into effect in October 2022.",
-        "Important Points": [
-            "Pool Re announced a notable reduction in reinsurance pricing to enable underwriting terrorism risk at risk-reflective rates in the UK market.",
-            "The reduction will vary based on geographical location and is expected to prompt a decrease in insurance prices, with a significant reduction in non-urban areas.",
-            "Pool Re's enhanced modeling capability and VSAT tool redesign will improve risk understanding and promote price flexibility in the future."
+        "Synthetic Title": "Insurance Talent Shifts in Specialty Lines",
+        "Summary": "Key appointments at HDI, Howden RE, and IQUW.",
+        "Source Article Index": "Article 691714 2022 10 25",
+        "Nature of Risk": "Underwriting talent concentration and expertise",
+        "Core Risks": [
+            "Talent Risk",
+            "Operational Risk",
+            "Strategic Risk"
         ],
-        "Potential Risks": [
-            "Reduced reinsurance pricing may lead to underpricing of terrorism risks, potentially impacting the financial sustainability of insurers in the event of a large-scale terrorist event.",
-            "Substantial reductions in insurance prices could attract more businesses to adopt terrorism cover but may also increase the overall exposure to terrorism risk.",
-            "Reliance on the UK government's unlimited guarantee for comprehensive terrorism cover may pose a risk if government support changes or is withdrawn."
+        "Risk Factors": [
+            "Departure of critical underwriting personnel",
+            "Competitor talent poaching",
+            "Lack of succession planning"
         ],
-        "Risk Level": "Medium",
-        "Risk Level Numeric": 1,
-        "Recommendation": "Exercise caution and closely monitor the impact of reduced reinsurance pricing on the market. Consider adjusting underwriting strategies to account for potential increased exposure to terrorism risk. Maintain a thorough understanding of the government support framework for terrorism cover.",
+        "Suggestion for Risk Mitigation": "Establish robust talent retention strategies and succession planning.",
+        "Premium Outlook": "Premium should stay stable, precautions in place may offset risks.",
+        "Top Locations": [
+            "London",
+            "Jade Wilcox",
+            "US",
+            "UK",
+            "Zurich"
+        ],
         "Keywords": [
-            "catastrophe",
-            "location",
-            "inflation",
-            "insurance",
-            "reinsurance",
-            "property",
-            "market",
-            "investment",
-            "risk",
-            "loss",
-            "claim"
-        ]
+            "Zurich"
+        ],
+        "Risk Matrix Data": [
+            {
+                "Event": "Key underwriting talent exits",
+                "Impact": 2,
+                "Likelihood": 2
+            },
+            {
+                "Event": "Loss of key business division",
+                "Impact": 3,
+                "Likelihood": 1
+            },
+            {
+                "Event": "Decrease in profitability due to talent gaps",
+                "Impact": 2,
+                "Likelihood": 2
+            }
+        ],
+        "Average Impact Score": 2.3333333333333335,
+        "Average Likelihood Score": 1.6666666666666667,
+        "Risk Priority Number": 3.8888888888888893,
+        "Risk Matrix Image": "./output/matrix_Article_691714_2022_10_25.png"
     },
     {
-        "Title": "Article 766965 2024 03 28",
-        "Summary": "Lloyd\u2019s of London reported a pre-tax profit of 10.7 billion pounds in 2023, a significant improvement from the previous year. The commercial insurance market attributes the profit to strong underwriting and investment performance. The market has faced challenges such as the pandemic, wars, inflation, and natural catastrophes, leading to business exclusions and price increases to maintain profitability.",
-        "Important Points": [
-            "Lloyd\u2019s of London reported a pre-tax profit of 10.7 billion pounds in 2023.",
-            "Strong underwriting and investment performance contributed to the profit.",
-            "Commercial insurers have faced challenges like the pandemic, wars, inflation, and natural catastrophes, prompting them to exclude some business and increase prices."
+        "Synthetic Title": "European Insurer Baloise Takeover Speculations",
+        "Summary": "European insurers eye potential takeover of Baloise in Zurich.",
+        "Source Article Index": "Article 800960 2024 11 13",
+        "Nature of Risk": "Takeover and market disruption risk for Baloise in Zurich.",
+        "Core Risks": [
+            "Takeover Risk",
+            "Market Disruption Risk",
+            "Regulatory Risk"
         ],
-        "Potential Risks": [
-            "Challenges from external factors like the pandemic, wars, and natural disasters could continue to impact the insurance market.",
-            "Relying on exclusions and price increases to maintain profitability may lead to reduced market competitiveness.",
-            "Changes in interest rates could affect investment returns and overall financial performance."
+        "Risk Factors": [
+            "Activist investor influence",
+            "High valuation hurdles",
+            "Competitive market pressures"
         ],
-        "Risk Level": "Medium",
-        "Risk Level Numeric": 1,
-        "Recommendation": "Monitor external factors closely and adapt underwriting strategies accordingly to mitigate risks. Consider diversifying investment portfolios to reduce reliance on interest rate changes. Continuously assess market competitiveness to ensure sustainable profitability in the long term.",
+        "Suggestion for Risk Mitigation": "Enhance shareholder communications and prepare defensive strategies.",
+        "Premium Outlook": "Premium should increase by 15% due to heightened takeover and market disruption risks.",
+        "Top Locations": [
+            "Cevian",
+            "Zurich",
+            "Bloomberg",
+            "Germany",
+            "Belgium"
+        ],
         "Keywords": [
-            "catastrophe",
-            "inflation",
-            "insurance",
-            "market",
-            "investment",
-            "loss"
-        ]
+            "Zurich"
+        ],
+        "Risk Matrix Data": [
+            {
+                "Event": "Competitive auction for Baloise acquisition",
+                "Impact": 2,
+                "Likelihood": 2
+            },
+            {
+                "Event": "Baloise refocusing its business strategy independently",
+                "Impact": 1,
+                "Likelihood": 2
+            }
+        ],
+        "Average Impact Score": 1.5,
+        "Average Likelihood Score": 2.0,
+        "Risk Priority Number": 3.0,
+        "Risk Matrix Image": "./output/matrix_Article_800960_2024_11_13.png"
     },
     {
-        "Title": "Article 800405 2024 11 07",
-        "Summary": "Swiss Re AG is increasing reserves in its US Property & Casualty business by $2.4 billion in the third quarter, impacting full-year profit expectations. The company conducted a review of its P&C reserves to address reserve developments in its entire US liability portfolio.",
-        "Important Points": [
-            "Swiss Re is raising reserves in its US P&C business by $2.4 billion",
-            "Full-year profit expectations have been downgraded",
-            "Company conducted a comprehensive review of P&C reserves"
+        "Synthetic Title": "London's Flexible Working Policy Impact",
+        "Summary": "Schroders maintains flexible work policy in London.",
+        "Source Article Index": "Article 752152 2023 12 15",
+        "Nature of Risk": "Operational Risk due to workplace culture shift.",
+        "Core Risks": [
+            "Operational Risk",
+            "Reputation Risk",
+            "Talent Acquisition Risk"
         ],
-        "Potential Risks": [
-            "Impact on full-year profit due to reserve increase",
-            "Questions on reserve adequacy affecting investor confidence",
-            "Legal trends potentially leading to further reserve adjustments"
+        "Risk Factors": [
+            "Gender disparities in senior positions",
+            "Resistance to culture change by employees",
+            "Public backlash due to slow progress"
         ],
-        "Risk Level": "High",
-        "Risk Level Numeric": 2,
-        "Recommendation": "Increase premium and closely monitor reserve adequacy in the US P&C portfolio to address potential future adjustments.",
+        "Suggestion for Risk Mitigation": "Implement continuous diversity training and monitor progress regularly.",
+        "Premium Outlook": "Premium should stay stable with a focus on risk monitoring and internal policy adjustments.",
+        "Top Locations": [
+            "the City of London",
+            "UK",
+            "London",
+            "Zurich",
+            "LinkedIn"
+        ],
         "Keywords": [
-            "property",
-            "market",
-            "loss"
-        ]
+            "Zurich"
+        ],
+        "Risk Matrix Data": [
+            {
+                "Event": "Increased female representation challenges",
+                "Impact": 2,
+                "Likelihood": 2
+            },
+            {
+                "Event": "Long-term culture shifts at companies",
+                "Impact": 2,
+                "Likelihood": 3
+            }
+        ],
+        "Average Impact Score": 2.0,
+        "Average Likelihood Score": 2.5,
+        "Risk Priority Number": 5.0,
+        "Risk Matrix Image": "./output/matrix_Article_752152_2023_12_15.png"
     },
     {
-        "Title": "Article 794446 2024 09 26",
-        "Summary": "Top Indian insurer Star Health has sued Telegram, a hacker, and Cloudflare for leaking personal data and medical reports of policyholders. Star received a temporary injunction to block chatbots leaking data online. Hackers used chatbots to distribute sensitive customer information.",
-        "Important Points": [
-            "Star Health sued Telegram, hacker, and Cloudflare for leaking data",
-            "Chatbots were used to distribute sensitive customer data including medical reports",
-            "Hackers sold stolen data using chatbots, with India having the largest number of victims"
+        "Synthetic Title": "Zurich's Shift: Oil and Gas Underwriting Changes",
+        "Summary": "Zurich ceases new oil and gas project underwriting.",
+        "Source Article Index": "Article 768377 2024 04 08",
+        "Nature of Risk": "Transition risk due to climate-oriented underwriting changes.",
+        "Core Risks": [
+            "Environmental Risk",
+            "Reputational Risk",
+            "Regulatory Risk"
         ],
-        "Potential Risks": [
-            "Data breach of policyholder information",
-            "Legal and reputational risks for Star Health",
-            "Financial losses due to lawsuits and potential compensation"
+        "Risk Factors": [
+            "Changing industry norms",
+            "Client objections",
+            "Lack of market alternatives"
         ],
-        "Risk Level": "High",
-        "Risk Level Numeric": 2,
-        "Recommendation": "Increase premium and consider adding cyber insurance coverage to mitigate potential financial losses due to legal actions and compensation claims.",
+        "Suggestion for Risk Mitigation": "Enhance client communication and transition guidance.",
+        "Premium Outlook": "Premiums may decrease due to reduced exposure, by approximately 10%.",
+        "Top Locations": [
+            "Zurich",
+            "US",
+            "Germany"
+        ],
         "Keywords": [
-            "market",
-            "claim"
-        ]
+            "Zurich"
+        ],
+        "Risk Matrix Data": [
+            {
+                "Event": "Loss of high-emitting clients",
+                "Impact": 2,
+                "Likelihood": 2
+            },
+            {
+                "Event": "Client dissatisfaction with new policy",
+                "Impact": 1,
+                "Likelihood": 3
+            }
+        ],
+        "Average Impact Score": 1.5,
+        "Average Likelihood Score": 2.5,
+        "Risk Priority Number": 3.75,
+        "Risk Matrix Image": "./output/matrix_Article_768377_2024_04_08.png"
     },
     {
-        "Title": "Article 785182 2024 07 23",
-        "Summary": "DUAL Group appointed Marilena Rodriguez Forero as CEO of DUAL Latin America, emphasizing the strategic importance of the region. Rodriguez Forero brings over 30 years of industry experience from her previous roles at AXA and XL Catlin.",
-        "Important Points": [
-            "Marilena Rodriguez Forero appointed as CEO of DUAL Latin America",
-            "Strategic importance of Latin America region for DUAL Group",
-            "Experience of Rodriguez Forero in the insurance industry"
+        "Synthetic Title": "Zurich Insurance Growth Targets",
+        "Summary": "Zurich sets ambitious profit goals for the future.",
+        "Source Article Index": "Article 802014 2024 11 21",
+        "Nature of Risk": "Financial Growth Risk",
+        "Core Risks": [
+            "Financial Risk",
+            "Market Competition Risk",
+            "Acquisition Integration Risk"
         ],
-        "Potential Risks": [
-            "Transition risk with new CEO appointment",
-            "Market expansion risk in Latin America",
-            "Dependency on key personnel like Rodriguez Forero"
+        "Risk Factors": [
+            "Economic downturn affecting growth",
+            "Increased competition leading to lower margins",
+            "Integration challenges with acquisitions"
         ],
-        "Risk Level": "Medium",
-        "Risk Level Numeric": 1,
-        "Recommendation": "Monitor the transition of new CEO closely and ensure continuity in underwriting standards. Consider diversifying business operations in case of market fluctuations in Latin America. Develop contingency plans in case of any unforeseen disruptions due to the key personnel dependency.",
+        "Suggestion for Risk Mitigation": "Diversify revenue sources and conduct thorough due diligence for acquisitions.",
+        "Premium Outlook": "Premiums should be stable as the company's growth prospects seem positive.",
+        "Top Locations": [
+            "Zurich",
+            "India",
+            "Switzerland",
+            "Photo"
+        ],
         "Keywords": [
-            "insurance",
-            "reinsurance",
-            "property",
-            "market"
-        ]
+            "Zurich"
+        ],
+        "Risk Matrix Data": [
+            {
+                "Event": "Failure to meet profit growth targets",
+                "Impact": 3,
+                "Likelihood": 2
+            },
+            {
+                "Event": "Market competition impacts earnings",
+                "Impact": 2,
+                "Likelihood": 2
+            }
+        ],
+        "Average Impact Score": 2.5,
+        "Average Likelihood Score": 2.0,
+        "Risk Priority Number": 5.0,
+        "Risk Matrix Image": "./output/matrix_Article_802014_2024_11_21.png"
     },
     {
-        "Title": "Article 664027 2022 04 21",
-        "Summary": "The article announces new appointments at the insurance broker Miller and insurer Arch Insurance International, detailing the roles and experiences of the appointed individuals.",
-        "Important Points": [
-            "Adam Power and Rebecca Harvey appointed as account executives at Miller for International and North American Professional Risks teams respectively",
-            "Patrizia Barattini and Richard Smith appointed as underwriters at Arch Insurance International for professional liability and warranty & specialty affinity respectively",
-            "Detailed descriptions of the experiences and roles of the appointed individuals provided in the article"
+        "Synthetic Title": "Credit Suisse vs. SoftBank Legal Dispute",
+        "Summary": "Credit Suisse pursues $440M lawsuit against SoftBank over Greensill collapse",
+        "Source Article Index": "Article 698558 2022 12 08",
+        "Nature of Risk": "Legal and financial risk due to contested transactions",
+        "Core Risks": [
+            "Legal Risk",
+            "Credit Risk",
+            "Financial Risk"
         ],
-        "Potential Risks": [
-            "Lack of mention of specific risk management strategies or track record of risk assessment for the appointed underwriters",
-            "Transition challenges with new appointments potentially leading to errors or misjudgments in underwriting decisions",
-            "Inexperienced individuals in key underwriting roles could pose a risk to the company's profitability and reputation"
+        "Risk Factors": [
+            "Contested transactions",
+            "Restructuring actions",
+            "Default of credit notes"
         ],
-        "Risk Level": "Medium",
-        "Risk Level Numeric": 1,
-        "Recommendation": "Increase monitoring and mentoring for the newly appointed underwriters to ensure a smooth transition and proper risk assessment. Conduct regular reviews of underwriting decisions made by Adam Power and Rebecca Harvey to validate their expertise in handling professional risks effectively.",
+        "Suggestion for Risk Mitigation": "Ensure thorough due diligence and legal scrutiny in financial dealings.",
+        "Premium Outlook": "Stable premium as legal risks are manageable.",
+        "Top Locations": [
+            "US",
+            "London",
+            "UK",
+            "Zurich"
+        ],
         "Keywords": [
-            "insurance",
-            "reinsurance",
-            "property",
-            "market",
-            "risk"
-        ]
-    },
-    {
-        "Title": "Article 754917 2024 01 09",
-        "Summary": "Oil and fuel tanker traffic in the Red Sea remained stable in December despite attacks by Iran-aligned Houthi militants. The attacks have increased shipping costs and insurance premiums but have not significantly affected oil flows. Shippers are still using the Red Sea route due to cost considerations despite some companies diverting cargoes to the longer route around Africa.",
-        "Important Points": [
-            "Stable tanker traffic in the Red Sea despite attacks by Houthi militants",
-            "Increased shipping costs due to attacks but minimal impact on oil flows",
-            "Some companies diverted cargoes to the longer route around Africa"
+            "Zurich"
         ],
-        "Potential Risks": [
-            "Increased shipping costs and insurance premiums",
-            "Potential disruption in tanker traffic due to attacks by Houthi militants",
-            "Possible safety concerns for vessels using the Red Sea route"
+        "Risk Matrix Data": [
+            {
+                "Event": "Loss in lawsuit against SoftBank",
+                "Impact": 3,
+                "Likelihood": 2
+            },
+            {
+                "Event": "Financial impact on Credit Suisse",
+                "Impact": 2,
+                "Likelihood": 2
+            }
         ],
-        "Risk Level": "Medium",
-        "Risk Level Numeric": 1,
-        "Recommendation": "Proceed with caution; Monitor developments closely",
-        "Keywords": [
-            "insurance",
-            "risk"
-        ]
-    },
-    {
-        "Title": "Article 739581 2023 09 08",
-        "Summary": "Hamilton Insurance Group has confidentially filed for a U.S. initial public offering amidst a growing trend of IPOs involving insurance and reinsurance companies. Investors have shown interest in the insurance sector, as seen with the success of other offerings like Skyward Specialty and Everest Re. Hamilton's offering details remain undisclosed, but speculation suggests a valuation of over $2 billion.",
-        "Important Points": [
-            "Hamilton Insurance Group files for a U.S. IPO in a favorable market environment for insurance companies",
-            "Investors have shown interest in the insurance sector with successful IPOs of other companies like Skyward Specialty and Everest Re",
-            "Hamilton's potential valuation is estimated to be over $2 billion based on strategic options"
-        ],
-        "Potential Risks": [
-            "Market volatility could impact the success of Hamilton's IPO",
-            "Undisclosed terms and details of Hamilton's offering may lead to uncertainty for investors",
-            "Rising premiums in the insurance sector could result in increased pressure on underwriting profitability"
-        ],
-        "Risk Level": "Medium",
-        "Risk Level Numeric": 1,
-        "Recommendation": "Monitor market conditions closely and assess the impact of market volatility on the success of Hamilton's IPO. Consider adjusting underwriting strategies to manage potential pressure on profitability due to rising premiums in the insurance sector.",
-        "Keywords": [
-            "insurance",
-            "reinsurance",
-            "market",
-            "risk"
-        ]
-    },
-    {
-        "Title": "Article 660977 2022 04 01",
-        "Summary": "Greg Hingston, the new global chief executive of HSBC Holdings Plc's insurance unit, has been actively involved in acquisitions, expanding the China business, and seeking new deals. The focus is on inorganic growth in key markets, particularly in Asia, with a significant emphasis on mainland China. HSBC aims to become the leading bank in Asia wealth, under which insurance falls, by strategically growing its presence in China, India, and other markets.",
-        "Important Points": [
-            "HSBC, under new leadership, is pursuing inorganic growth through acquisitions and strategic expansion in key markets such as China and India.",
-            "Expansion in insurance aligns with HSBC's vision of becoming the leading bank in Asia wealth, emphasizing the importance of the China business.",
-            "The bank is investing in its Chinese fintech venture, Pinnacle, to add financial planners in key Chinese cities, expanding its client base outside bank branches."
-        ],
-        "Potential Risks": [
-            "Market risks in mainland China due to economic instability, regulatory crackdowns, and COVID-19 challenges.",
-            "Political risks in China and Hong Kong could impact HSBC's operations and growth plans.",
-            "Border closures between Hong Kong and mainland China have significantly impacted the insurance industry, affecting new business opportunities and cross-border traffic."
-        ],
-        "Risk Level": "High",
-        "Risk Level Numeric": 2,
-        "Recommendation": "Increase scrutiny of market risks and political climate in China and Hong Kong. Consider diversifying expansion plans to reduce reliance on specific markets. Monitor closely the impact of border closures and adapt marketing strategies to target domestic markets more effectively.",
-        "Keywords": [
-            "insurance",
-            "market",
-            "investment",
-            "risk"
-        ]
+        "Average Impact Score": 2.5,
+        "Average Likelihood Score": 2.0,
+        "Risk Priority Number": 5.0,
+        "Risk Matrix Image": "./output/matrix_Article_698558_2022_12_08.png"
     }
 ]
