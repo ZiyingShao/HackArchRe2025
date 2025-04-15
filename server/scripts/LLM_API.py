@@ -1,5 +1,6 @@
 from openai import OpenAI
 import base64
+#Author : Erik Schnell
 
 class LLM_API:
     _instance = None
@@ -12,7 +13,7 @@ class LLM_API:
 
     def initialize(self):
         self.client = OpenAI(
-            api_key="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"
+            api_key="put your key here"
         )
 
     def ask(self, prompt: str) -> str:

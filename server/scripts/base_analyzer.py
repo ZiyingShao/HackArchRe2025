@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import List, Dict
 from LLM_API import LLM_API
+#Author: Erik Schnell
 
 class BaseAnalyzer(ABC):
     def __init__(self, file_names: List[str]):

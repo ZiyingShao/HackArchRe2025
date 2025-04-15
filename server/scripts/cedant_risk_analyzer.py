@@ -2,6 +2,7 @@ from typing import Dict, List
 from base_analyzer import BaseAnalyzer
 import os
 import json
+# Author: Erik Schnell
 
 class CedantRiskAnalyzer(BaseAnalyzer):
     def __init__(self, file_names: List[str]):

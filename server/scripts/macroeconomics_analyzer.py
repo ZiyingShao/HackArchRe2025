@@ -3,6 +3,7 @@ import os
 from typing import Dict, List
 from base_analyzer import BaseAnalyzer
 import pandas as pd
+#Author: Erik Schnell
 
 class MacroeconomicRiskAnalyzer(BaseAnalyzer):
     """
