@@ -8,7 +8,7 @@ import re
 from collections import Counter
 import matplotlib.pyplot as plt
 
-
+#Author: Ziying Shao
 class LLM_API:
     _instance = None
 
@@ -19,7 +19,7 @@ class LLM_API:
         return cls._instance
 
     def initialize(self):
-        self.api_key = "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"
+        self.api_key = "put your key here"
         import openai
 
         self.client = openai

@@ -2,6 +2,7 @@ import os
 import difflib
 import json
 from base_analyzer import BaseAnalyzer
+#Author: Erik Schnell
 
 class YoYAnalyzer(BaseAnalyzer):
     """
